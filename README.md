@@ -23,17 +23,19 @@ The CleanCut card currently advertises:
 - $19.99 launch price, paid once
 - 3 free videos
 - one-computer license
-- Apple Silicon Mac
+- Apple Silicon and Intel Mac
 - macOS 14 Sonoma or later
 - approximately 2 GB download
 - private on-device video processing
 
-Its download button uses the stable signed-release URL:
+Its Mac download buttons use the stable signed-release URLs:
 
 <https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut.dmg>
 
-Do not replace that link with a version-specific asset. Publishing a new
-CleanCut GitHub release as latest updates the download automatically.
+<https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut-Intel.dmg>
+
+Do not replace those links with version-specific assets. Publishing a new
+CleanCut GitHub release as latest updates the downloads automatically.
 
 ## Deployment
 
