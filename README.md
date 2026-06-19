@@ -6,6 +6,17 @@ Static GitHub Pages site for Envelopes App products.
 
 <https://envelopesapp.github.io/tools-site/>
 
+## Pages
+
+- `index.html`: CleanCut product, pricing, download, and purchase page
+- `about.html`: Toolshelf/Envelopes product principles and contact
+- `support.html`: installation, license, update, and processing help
+- `privacy.html`: local-processing and network-connection disclosure
+- `styles.css`: shared responsive design
+- `site.js`: mobile navigation and local Lucide icon setup
+- `assets/cleancut-hero.jpg`: generated launch hero artwork
+- `assets/lucide.min.js`: locally hosted interface icons
+
 The CleanCut card currently advertises:
 
 - $19.99 launch price, paid once
@@ -29,7 +40,8 @@ The site is plain `index.html` served by GitHub Pages from this repository.
 After reviewing a change:
 
 ```bash
-git add index.html README.md
+git add index.html about.html support.html privacy.html styles.css site.js \
+  assets favicon.svg robots.txt sitemap.xml README.md
 git commit -m "Describe the site change"
 git push origin main
 ```

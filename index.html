@@ -1,113 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Toolshelf — simple, private tools</title>
-<meta name="description" content="A small collection of simple, private tools for your Mac, phone, and browser." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
-<style>
-  :root{
-    --bg:#0a0c11; --bg2:#11141c; --card:#141823; --stroke:#262c3a;
-    --text:#eef1f7; --muted:#9aa3b5; --faint:#6b7385;
-    --accentA:#7c5cff; --accentB:#479bff;
-  }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  body{
-    font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--text);
-    -webkit-font-smoothing:antialiased; line-height:1.6;
-    background-image:radial-gradient(900px 500px at 50% -10%, rgba(124,92,255,.18), transparent 70%);
-    background-repeat:no-repeat;
-  }
-  a{color:inherit; text-decoration:none;}
-  .wrap{max-width:1040px; margin:0 auto; padding:0 24px;}
-
-  nav{display:flex; align-items:center; justify-content:space-between; padding:22px 0;}
-  .brand{display:flex; align-items:center; gap:10px; font-weight:600; font-size:18px;}
-  .brand .dot{width:26px; height:26px; border-radius:8px; background:linear-gradient(135deg,var(--accentA),var(--accentB));}
-  .navlinks{display:flex; gap:24px; font-size:14px; color:var(--muted);}
-  .navlinks a:hover{color:var(--text);}
-
-  header{text-align:center; padding:64px 0 40px;}
-  .pill{display:inline-flex; align-items:center; gap:7px; font-size:13px; color:var(--muted);
-    border:1px solid var(--stroke); border-radius:999px; padding:6px 14px; margin-bottom:26px; background:rgba(255,255,255,.02);}
-  h1{font-size:54px; line-height:1.05; font-weight:800; letter-spacing:0;}
-  h1 .grad{background:linear-gradient(135deg,var(--accentA),var(--accentB)); -webkit-background-clip:text; background-clip:text; color:transparent;}
-  header p{font-size:19px; color:var(--muted); max-width:560px; margin:20px auto 0;}
-
-  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; padding:24px 0 64px;}
-  .card{background:var(--card); border:1px solid var(--stroke); border-radius:18px; padding:26px 24px;
-    display:flex; flex-direction:column; transition:transform .15s ease, border-color .15s ease;}
-  .card:hover{transform:translateY(-3px); border-color:#36405a;}
-  .icon{width:52px; height:52px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:26px; margin-bottom:18px;}
-  .card h2{font-size:21px; font-weight:600; letter-spacing:0;}
-  .card .desc{color:var(--muted); font-size:15px; margin:8px 0 16px; flex:1;}
-  .tag{align-self:flex-start; font-size:12px; padding:4px 10px; border-radius:7px; margin-bottom:18px;}
-  .price{font-size:28px; font-weight:800; letter-spacing:0; margin:2px 0 4px;}
-  .price span{font-size:13px; font-weight:500; color:var(--muted); letter-spacing:0;}
-  .btn{display:flex; align-items:center; justify-content:center; gap:8px; padding:11px; border-radius:11px;
-    font-size:14px; font-weight:500; border:1px solid var(--stroke); color:var(--text);}
-  .btn.primary{border:none; background:linear-gradient(135deg,var(--accentA),var(--accentB)); color:#fff;}
-  .btn.primary:hover{filter:brightness(1.08);}
-  .btn.soon{color:var(--faint); cursor:default;}
-  .sub{font-size:12px; color:var(--faint); text-align:center; margin-top:9px;}
-
-  footer{border-top:1px solid var(--stroke); padding:28px 0; text-align:center; color:var(--faint); font-size:13px;}
-  @media(max-width:640px){ h1{font-size:38px;} header{padding:40px 0 24px;} .navlinks{display:none;} }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0e14">
+  <meta name="description" content="CleanCut mutes profanity, creates subtitles, and converts videos privately on your Mac. Try 3 videos free, then pay $19.99 once.">
+  <meta property="og:title" content="CleanCut | Private video cleanup for Mac">
+  <meta property="og:description" content="Mute profanity, create subtitles, and convert videos privately on your Mac. Try 3 videos free.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://envelopesapp.github.io/tools-site/">
+  <meta property="og:image" content="https://envelopesapp.github.io/tools-site/assets/cleancut-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://envelopesapp.github.io/tools-site/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>CleanCut | Private video cleanup for Mac</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets/lucide.min.js" defer></script>
+  <script src="site.js" defer></script>
 </head>
 <body>
-<div class="wrap">
-
-  <nav>
-    <div class="brand"><span class="dot"></span> Toolshelf</div>
-    <div class="navlinks"><a href="#apps">Apps</a><a href="#about">About</a></div>
-  </nav>
-
-  <header>
-    <span class="pill">🔒 Private by design · runs on your device</span>
-    <h1>Simple tools,<br /><span class="grad">made to just work.</span></h1>
-    <p>A small collection of private, easy-to-use apps — for your Mac, your phone, and your browser. No accounts to clean videos. Nothing uploaded.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-nav shell">
+      <a class="brand" href="index.html" aria-label="Toolshelf home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>Toolshelf</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <i data-lucide="menu" aria-hidden="true"></i>
+        <span>Menu</span>
+      </button>
+      <nav class="nav-links" id="site-menu" aria-label="Primary navigation">
+        <a class="active" href="index.html">CleanCut</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+        <a class="nav-download" href="https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut.dmg">
+          <i data-lucide="download" aria-hidden="true"></i>
+          Download
+        </a>
+      </nav>
+    </div>
   </header>
 
-  <section class="grid" id="apps">
-
-    <div class="card">
-      <div class="icon" style="background:rgba(124,92,255,.15); color:#a99bff;">🎬</div>
-      <h2>CleanCut</h2>
-      <p class="desc">Three tools in one: <strong style="color:#cfc7ff; font-weight:600;">mute profanity</strong>, generate subtitles, and convert any video to a universal format — automatically, and entirely on your Mac. Nothing leaves your computer.</p>
-      <div class="price">$19.99 <span>launch price · pay once</span></div>
-      <span class="tag" style="background:rgba(124,92,255,.15); color:#a99bff;">3 free videos · one-computer license · Apple Silicon Mac</span>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <a class="btn primary" href="https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut.dmg" id="dl" style="flex:1 1 100%;">⬇  Download for Mac (Apple Silicon)</a>
-        <span class="btn soon" style="flex:1 1 150px;">⊞  Mac (Intel) — coming soon</span>
-        <span class="btn soon" style="flex:1 1 150px;">⊞  Windows — coming soon</span>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="shell hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> Available now for Apple Silicon Macs</p>
+        <h1>CleanCut</h1>
+        <p class="hero-lede">Clean up a video without sending it anywhere.</p>
+        <p class="hero-copy">Mute profanity, create accurate subtitles, and convert stubborn video files into a universal MP4. It all runs privately on your Mac.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut.dmg">
+            <i data-lucide="download" aria-hidden="true"></i>
+            Download free
+          </a>
+          <a class="button button-secondary" href="https://buy.polar.sh/polar_cl_ecQVRK65Frv7xlwUFgsDpXMhYEspQDliIrXDZ1W9nYR">
+            <i data-lucide="credit-card" aria-hidden="true"></i>
+            Buy for $19.99
+          </a>
+        </div>
+        <p class="hero-meta">3 videos free <span></span> Pay once <span></span> No subscription</p>
       </div>
-      <div class="sub">Apple Silicon Mac · macOS 14 (Sonoma) or later · ~2&nbsp;GB download. No subscription — videos are processed privately on your Mac.</div>
+    </section>
+
+    <section class="trust-strip" aria-label="Product highlights">
+      <div class="shell trust-grid">
+        <div><i data-lucide="lock-keyhole" aria-hidden="true"></i><span><strong>100% on-device</strong>Video files never leave your Mac.</span></div>
+        <div><i data-lucide="badge-check" aria-hidden="true"></i><span><strong>Apple notarized</strong>Signed and checked for macOS.</span></div>
+        <div><i data-lucide="wallet-cards" aria-hidden="true"></i><span><strong>$19.99 once</strong>One computer, no recurring bill.</span></div>
+        <div><i data-lucide="sparkles" aria-hidden="true"></i><span><strong>Try before buying</strong>Clean your first 3 videos free.</span></div>
+      </div>
+    </section>
+
+    <section class="section product-section" aria-labelledby="product-title">
+      <div class="shell">
+        <div class="section-heading centered">
+          <p class="eyebrow">The actual experience</p>
+          <h2 id="product-title">Three useful tools. One calm interface.</h2>
+          <p>Drop in a video, choose what you need, and let CleanCut handle the technical work.</p>
+        </div>
+
+        <div class="app-window" id="product-preview" role="img" aria-label="Preview of the CleanCut Mac application start screen">
+          <div class="window-bar">
+            <div class="traffic-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span class="window-name">CleanCut</span>
+          </div>
+          <div class="app-screen">
+            <div class="app-title-row">
+              <span></span>
+              <div><strong>CleanCut</strong> <small>v1.0.38</small></div>
+              <i data-lucide="settings" aria-hidden="true"></i>
+            </div>
+            <div class="app-center">
+              <div class="app-symbol" aria-hidden="true"><span></span><span></span></div>
+              <h3>Three tools in one</h3>
+              <p>Mute profanity, generate subtitles, and convert any video to a universal format, automatically, on your Mac. Nothing is ever uploaded.</p>
+              <span class="drag-copy">or drag a video onto the window</span>
+              <div class="privacy-chip"><i data-lucide="lock-keyhole" aria-hidden="true"></i>100% on-device &amp; private</div>
+              <div class="folder-link"><i data-lucide="folder-open" aria-hidden="true"></i>Clean a whole folder instead</div>
+            </div>
+            <div class="app-button"><i data-lucide="video" aria-hidden="true"></i>Choose a Video</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-band" id="features" aria-labelledby="features-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Built for ordinary video problems</p>
+          <h2 id="features-title">Pick one task or run all three together.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon blue"><i data-lucide="wand-sparkles" aria-hidden="true"></i></div>
+            <p class="feature-number">01</p>
+            <h3>Mute profanity</h3>
+            <p>On-device Whisper transcription finds flagged words and silences them with precise timing.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon violet"><i data-lucide="captions" aria-hidden="true"></i></div>
+            <p class="feature-number">02</p>
+            <h3>Create subtitles</h3>
+            <p>Generate a separate SRT file or place selectable subtitles directly inside the MP4.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon green"><i data-lucide="refresh-cw" aria-hidden="true"></i></div>
+            <p class="feature-number">03</p>
+            <h3>Convert video</h3>
+            <p>Turn difficult formats into a universal H.264 MP4, while avoiding unnecessary re-encoding when possible.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow-section" aria-labelledby="workflow-title">
+      <div class="shell workflow-layout">
+        <div class="section-heading">
+          <p class="eyebrow">No editing degree required</p>
+          <h2 id="workflow-title">From source file to clean copy in three steps.</h2>
+          <p>CleanCut handles single videos and entire folders. Your originals stay recoverable when you choose Replace Original.</p>
+        </div>
+        <ol class="steps">
+          <li><span>1</span><div><strong>Choose a video</strong><p>Pick a file, drag one onto the window, or select a whole folder.</p></div></li>
+          <li><span>2</span><div><strong>Select your tools</strong><p>Toggle profanity muting, subtitles, conversion, or any combination.</p></div></li>
+          <li><span>3</span><div><strong>Get the finished file</strong><p>Open it immediately or reveal it in Finder. Nothing was uploaded.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section privacy-band" aria-labelledby="privacy-title">
+      <div class="shell privacy-layout">
+        <div class="privacy-mark"><i data-lucide="shield-check" aria-hidden="true"></i></div>
+        <div>
+          <p class="eyebrow">Private by architecture</p>
+          <h2 id="privacy-title">Your family videos, client work, and rough cuts stay yours.</h2>
+          <p>Transcription and video processing run inside the app on your computer. CleanCut only contacts the internet to validate a license and check whether a newer signed release exists.</p>
+          <a class="text-link" href="privacy.html">Read the privacy details <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" aria-labelledby="pricing-title">
+      <div class="shell pricing-layout">
+        <div>
+          <p class="eyebrow">Launch price</p>
+          <h2 id="pricing-title">Try it on 3 videos. Keep it for $19.99.</h2>
+          <p>No subscription. Your purchase includes a one-computer license that you can deactivate before moving to another Mac.</p>
+        </div>
+        <div class="price-panel">
+          <p class="price"><span>$</span>19.99</p>
+          <p>One-time purchase</p>
+          <a class="button button-primary" href="https://buy.polar.sh/polar_cl_ecQVRK65Frv7xlwUFgsDpXMhYEspQDliIrXDZ1W9nYR">
+            <i data-lucide="credit-card" aria-hidden="true"></i>
+            Buy CleanCut
+          </a>
+          <a class="button button-quiet" href="https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut.dmg">
+            <i data-lucide="download" aria-hidden="true"></i>
+            Try 3 videos free
+          </a>
+          <small>Apple Silicon Mac · macOS 14 or later · approximately 2 GB</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-callout">
+      <div class="shell support-callout-inner">
+        <div>
+          <p class="eyebrow">Real help from a real inbox</p>
+          <h2>Questions before or after buying?</h2>
+          <p>Installation, licenses, unusual video files: send us a note and we will help you sort it out.</p>
+        </div>
+        <a class="button button-secondary" href="support.html"><i data-lucide="life-buoy" aria-hidden="true"></i>Visit Support</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Toolshelf</span></a>
+        <p>Small, private tools made to solve real problems.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">CleanCut</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <div class="footer-contact">
+        <span>Support</span>
+        <a href="mailto:Envelopes.app.com@gmail.com">Envelopes.app.com@gmail.com</a>
+      </div>
     </div>
-
-    <div class="card">
-      <div class="icon" style="background:rgba(29,158,117,.15); color:#5dcaa5;">👛</div>
-      <h2>Budgeting app</h2>
-      <p class="desc">Envelope-style budgeting that's actually simple to keep up with. Made for real life, not spreadsheets.</p>
-      <span class="tag" style="background:rgba(29,158,117,.15); color:#5dcaa5;">iPhone · Android — soon</span>
-      <span class="btn soon">Coming soon</span>
+    <div class="shell footer-bottom">
+      <span>© 2026 Envelopes. All rights reserved.</span>
+      <span>CleanCut for Apple Silicon Mac</span>
     </div>
-
-    <div class="card">
-      <div class="icon" style="background:rgba(255,255,255,.07); color:#9aa3b5;">🌐</div>
-      <h2>Web tool</h2>
-      <p class="desc">A new idea built for the browser — nothing to install. More details soon.</p>
-      <span class="tag" style="background:rgba(255,255,255,.07); color:#9aa3b5;">In the works</span>
-      <span class="btn soon">Coming soon</span>
-    </div>
-
-  </section>
-
-  <footer id="about">Made with care · private by design · everything runs on your own device · © 2026</footer>
-
-</div>
+  </footer>
 </body>
 </html>
