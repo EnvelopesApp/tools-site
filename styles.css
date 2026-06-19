@@ -1248,11 +1248,28 @@ h3 {
   flex-wrap: wrap;
 }
 
-.platform-roadmap {
+.platform-options {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
   margin-top: 16px;
+}
+
+.platform-available {
+  grid-column: 1 / -1;
+}
+
+.hero-platform-options {
+  width: min(100%, 560px);
+  margin: 0 0 12px;
+}
+
+.hero-platform-options .button {
+  backdrop-filter: blur(14px);
+}
+
+.hero-purchase-actions {
+  margin-bottom: 20px;
 }
 
 .button-disabled {
@@ -1608,8 +1625,12 @@ h3 {
     width: 100%;
   }
 
-  .platform-roadmap {
+  .platform-options {
     grid-template-columns: 1fr;
+  }
+
+  .platform-available {
+    grid-column: auto;
   }
 }
 

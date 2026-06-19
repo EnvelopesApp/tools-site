@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://envelopesapp.github.io/tools-site/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>CleanCut | Private video cleanup for Mac</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260619b">
   <script src="assets/lucide.min.js" defer></script>
   <script src="site.js" defer></script>
 </head>
@@ -51,11 +51,15 @@
         <h1>CleanCut</h1>
         <p class="hero-lede">Clean up a video without sending it anywhere.</p>
         <p class="hero-copy">Mute profanity, create accurate subtitles, and convert stubborn video files into a universal MP4. It all runs privately on your Mac.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut.dmg">
+        <div class="platform-options hero-platform-options" role="group" aria-label="CleanCut platform downloads">
+          <a class="button button-primary platform-available" href="https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut.dmg">
             <i data-lucide="download" aria-hidden="true"></i>
-            Download free
+            Download for Apple Silicon
           </a>
+          <span class="button button-disabled" aria-disabled="true"><i data-lucide="monitor" aria-hidden="true"></i>Intel Mac <small>Coming soon</small></span>
+          <span class="button button-disabled" aria-disabled="true"><i data-lucide="panels-top-left" aria-hidden="true"></i>Windows <small>Coming soon</small></span>
+        </div>
+        <div class="hero-actions hero-purchase-actions">
           <a class="button button-secondary" href="https://buy.polar.sh/polar_cl_ecQVRK65Frv7xlwUFgsDpXMhYEspQDliIrXDZ1W9nYR">
             <i data-lucide="credit-card" aria-hidden="true"></i>
             Buy for $19.99
