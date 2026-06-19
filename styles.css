@@ -1248,6 +1248,40 @@ h3 {
   flex-wrap: wrap;
 }
 
+.platform-roadmap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.button-disabled {
+  min-width: 0;
+  gap: 7px;
+  padding: 0 14px;
+  justify-content: flex-start;
+  border-color: #303745;
+  background: #10141c;
+  color: #747e8f;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.button-disabled:hover {
+  transform: none;
+}
+
+.button-disabled small {
+  margin-left: auto;
+  color: #596273;
+  font-size: 9px;
+  font-weight: 750;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .catalog-coming {
   max-width: 700px;
   margin: 80px auto 0;
@@ -1572,6 +1606,10 @@ h3 {
 
   .catalog-actions .button {
     width: 100%;
+  }
+
+  .platform-roadmap {
+    grid-template-columns: 1fr;
   }
 }
 
