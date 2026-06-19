@@ -9,6 +9,7 @@ Static GitHub Pages site for Envelopes App products.
 ## Pages
 
 - `index.html`: CleanCut product, pricing, download, and purchase page
+- `apps.html`: expandable catalog for CleanCut and future products
 - `about.html`: Toolshelf/Envelopes product principles and contact
 - `support.html`: installation, license, update, and processing help
 - `privacy.html`: local-processing and network-connection disclosure
@@ -40,7 +41,7 @@ The site is plain `index.html` served by GitHub Pages from this repository.
 After reviewing a change:
 
 ```bash
-git add index.html about.html support.html privacy.html styles.css site.js \
+git add index.html apps.html about.html support.html privacy.html styles.css site.js \
   assets favicon.svg robots.txt sitemap.xml README.md
 git commit -m "Describe the site change"
 git push origin main
