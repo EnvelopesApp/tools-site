@@ -21,6 +21,8 @@ Static GitHub Pages site for Envelopes App products.
 The CleanCut card currently advertises:
 
 - $19.99 launch price, paid once
+- public beta / early access positioning
+- limited-time lifetime launch deal
 - 3 free videos
 - one-computer license
 - Apple Silicon and Intel Mac
