@@ -16,6 +16,9 @@ Static GitHub Pages site for Envelopes App products.
 - `styles.css`: shared responsive design
 - `site.js`: mobile navigation and local Lucide icon setup
 - `apps.json`: app catalog and launch metadata for agents/future automation
+- `docs/APP_LAUNCH_PLAYBOOK.md`: shared launch/license/release playbook
+- `docs/APP_AGENT_TEMPLATE.md`: starter `AGENTS.md` / `CLAUDE.md` for new apps
+- `docs/APP_PRODUCT_RECORD_TEMPLATE.md`: starter product record for new apps
 - `assets/cleancut-hero.jpg`: generated launch hero artwork
 - `assets/lucide.min.js`: locally hosted interface icons
 
@@ -42,10 +45,10 @@ CleanCut GitHub release as latest updates the downloads automatically.
 
 ## Adding Another App
 
-Start in `/Users/ryansp/Developer/APP_LAUNCH_PLAYBOOK.md`. Every new app should
-have its own app folder instructions, Polar product/license benefit, release
-repo or release plan, and product record before the website advertises it as
-available.
+Start in `/Users/ryansp/Developer/APP_LAUNCH_PLAYBOOK.md`, which points to the
+version-controlled playbook in `docs/`. Every new app should have its own app
+folder instructions, Polar product/license benefit, release repo or release
+plan, and product record before the website advertises it as available.
 
 Website sequence:
 
@@ -68,7 +71,7 @@ After reviewing a change:
 
 ```bash
 git add index.html apps.html about.html support.html privacy.html styles.css site.js \
-  apps.json assets favicon.svg robots.txt sitemap.xml README.md AGENTS.md CLAUDE.md
+  apps.json docs assets favicon.svg robots.txt sitemap.xml README.md AGENTS.md CLAUDE.md
 git commit -m "Describe the site change"
 git push origin main
 ```
