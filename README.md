@@ -15,6 +15,7 @@ Static GitHub Pages site for Envelopes App products.
 - `privacy.html`: local-processing and network-connection disclosure
 - `styles.css`: shared responsive design
 - `site.js`: mobile navigation and local Lucide icon setup
+- `apps.json`: app catalog and launch metadata for agents/future automation
 - `assets/cleancut-hero.jpg`: generated launch hero artwork
 - `assets/lucide.min.js`: locally hosted interface icons
 
@@ -39,6 +40,27 @@ Its Mac download buttons use the stable signed-release URLs:
 Do not replace those links with version-specific assets. Publishing a new
 CleanCut GitHub release as latest updates the downloads automatically.
 
+## Adding Another App
+
+Start in `/Users/ryansp/Developer/APP_LAUNCH_PLAYBOOK.md`. Every new app should
+have its own app folder instructions, Polar product/license benefit, release
+repo or release plan, and product record before the website advertises it as
+available.
+
+Website sequence:
+
+1. Add the app to `apps.json`.
+2. Add or update the card in `apps.html`.
+3. Add a full showcase page when the app is ready for public attention.
+4. Add support/privacy copy for anything app-specific.
+5. Use stable release URLs for downloads.
+6. Keep unavailable platforms clearly disabled or marked coming soon.
+7. Update `sitemap.xml` when a new public HTML page is added.
+8. Commit, push, wait for GitHub Pages, and verify the live page.
+
+The current CleanCut page can remain the home page until another app is ready
+enough to justify turning `index.html` into a broader Toolshelf home.
+
 ## Deployment
 
 The site is plain `index.html` served by GitHub Pages from this repository.
@@ -46,7 +68,7 @@ After reviewing a change:
 
 ```bash
 git add index.html apps.html about.html support.html privacy.html styles.css site.js \
-  assets favicon.svg robots.txt sitemap.xml README.md
+  apps.json assets favicon.svg robots.txt sitemap.xml README.md AGENTS.md CLAUDE.md
 git commit -m "Describe the site change"
 git push origin main
 ```
