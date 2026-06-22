@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0e14">
-  <meta name="description" content="CleanCut support for installation, licensing, updates, and unusual video files.">
+  <meta name="description" content="Toolshelf support for CleanCut and PolishKey installation, licensing, updates, and local processing.">
   <link rel="canonical" href="https://envelopesapp.github.io/tools-site/support.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <title>CleanCut Support | Toolshelf</title>
-  <link rel="stylesheet" href="styles.css?v=20260619d">
+  <title>Support | Toolshelf</title>
+  <link rel="stylesheet" href="styles.css?v=20260622a">
   <script src="assets/lucide.min.js" defer></script>
   <script src="site.js" defer></script>
 </head>
@@ -20,6 +20,7 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><i data-lucide="menu" aria-hidden="true"></i><span>Menu</span></button>
       <nav class="nav-links" id="site-menu" aria-label="Primary navigation">
         <a href="index.html">CleanCut</a>
+        <a href="polishkey.html">PolishKey</a>
         <a href="apps.html">Apps</a>
         <a href="about.html">About</a>
         <a class="active" href="support.html">Support</a>
@@ -31,9 +32,9 @@
   <main id="main">
     <section class="page-hero">
       <div class="shell">
-        <p class="eyebrow">CleanCut Support</p>
-        <h1>Let’s get you back to the video.</h1>
-        <p>Start with the quick answers below. If the file or situation is unusual, email us and include what you were trying to do.</p>
+        <p class="eyebrow">Toolshelf Support</p>
+        <h1>Let’s get you back to the work.</h1>
+        <p>Start with the quick answers below. If the situation is unusual, email us and include the app name, version, and what you were trying to do.</p>
       </div>
     </section>
 
@@ -43,7 +44,7 @@
           <div>
             <p class="eyebrow">Direct support</p>
             <h2>Envelopes.app.com@gmail.com</h2>
-            <p>For the fastest answer, include your macOS version, CleanCut version, video format, and the message shown in the app. Do not attach a private video unless we ask for it.</p>
+            <p>For the fastest answer, include the app name, app version, operating system version, and the message shown in the app. Do not attach private source files unless we ask for them.</p>
           </div>
           <a class="button button-primary" href="mailto:Envelopes.app.com@gmail.com?subject=CleanCut%20Support"><i data-lucide="mail" aria-hidden="true"></i>Email support</a>
         </div>
@@ -57,6 +58,7 @@
           <a href="#install">Install</a>
           <a href="#license">License</a>
           <a href="#updates">Updates</a>
+          <a href="#polishkey">PolishKey</a>
           <a href="#processing">Processing</a>
           <a href="#requirements">Requirements</a>
         </nav>
@@ -122,6 +124,29 @@
             </div>
           </section>
 
+          <section class="prose-section" id="polishkey">
+            <p class="eyebrow">PolishKey</p>
+            <h2>Local rewrites need Accessibility approval on macOS.</h2>
+            <div class="faq-list">
+              <details>
+                <summary>How will I install PolishKey?</summary>
+                <div>After the public build is notarized, download PolishKey.dmg, open it, and drag PolishKey into Applications. Launch the copy in Applications.</div>
+              </details>
+              <details>
+                <summary>Why does PolishKey ask for Accessibility permission?</summary>
+                <div>PolishKey needs Accessibility permission to read selected text and replace it in the app where you are typing. It uses this permission for the hotkey rewrite workflow, not to monitor everything you type.</div>
+              </details>
+              <details>
+                <summary>Do I need to install Ollama?</summary>
+                <div>No. The planned public build bundles the local runtime and default model cache so setup happens automatically when PolishKey opens.</div>
+              </details>
+              <details>
+                <summary>How does the license work?</summary>
+                <div>PolishKey is planned as a $19.99 one-time purchase with 25 successful rewrites free. One computer can be active at a time, and you can deactivate before moving the license to another machine.</div>
+              </details>
+            </div>
+          </section>
+
           <section class="prose-section" id="processing">
             <p class="eyebrow">Video processing</p>
             <h2>When a file behaves differently.</h2>
@@ -163,7 +188,7 @@
   <footer class="site-footer">
     <div class="shell footer-grid">
       <div><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Toolshelf</span></a><p>Small, private tools made to solve real problems.</p></div>
-      <div class="footer-links"><a href="index.html">CleanCut</a><a href="apps.html">Apps</a><a href="about.html">About</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+      <div class="footer-links"><a href="index.html">CleanCut</a><a href="polishkey.html">PolishKey</a><a href="apps.html">Apps</a><a href="about.html">About</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
       <div class="footer-contact"><span>Support</span><a href="mailto:Envelopes.app.com@gmail.com">Envelopes.app.com@gmail.com</a></div>
     </div>
     <div class="shell footer-bottom"><span>© 2026 Envelopes. All rights reserved.</span><span>CleanCut for Mac</span></div>

@@ -219,11 +219,23 @@ button {
   border-bottom: 1px solid var(--line);
 }
 
+.polishkey-hero {
+  background-image: url("assets/polishkey-hero.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .hero-shade {
   position: absolute;
   inset: 0;
   background: rgba(4, 7, 12, 0.22);
   box-shadow: inset 0 -110px 120px rgba(4, 7, 12, 0.72);
+}
+
+.polishkey-hero .hero-shade {
+  background:
+    linear-gradient(90deg, rgba(4, 7, 12, 0.82), rgba(4, 7, 12, 0.5) 42%, rgba(4, 7, 12, 0.18)),
+    rgba(4, 7, 12, 0.18);
 }
 
 .hero-content {
@@ -485,6 +497,15 @@ h3 {
   border: 1px solid #46516a;
   border-radius: 12px;
   background: #0d111a;
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.48);
+}
+
+.product-image {
+  width: min(1040px, 100%);
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #46516a;
+  border-radius: 12px;
   box-shadow: 0 34px 90px rgba(0, 0, 0, 0.48);
 }
 
@@ -1138,6 +1159,11 @@ h3 {
   background: #090c12;
 }
 
+.app-catalog .shell {
+  display: grid;
+  gap: 28px;
+}
+
 .catalog-item {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(380px, 0.92fr);
@@ -1156,6 +1182,25 @@ h3 {
   overflow: hidden;
   background: #0b111b url("assets/cleancut-hero.jpg") 72% center / cover no-repeat;
   border-right: 1px solid var(--line);
+}
+
+.catalog-screenshot {
+  padding: 28px;
+  background: #0b111b;
+}
+
+.catalog-screenshot img {
+  position: relative;
+  z-index: 1;
+  width: min(640px, 116%);
+  max-width: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
+}
+
+.catalog-screenshot::after {
+  display: none;
 }
 
 .catalog-visual::after {

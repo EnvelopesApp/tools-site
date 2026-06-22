@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0e14">
-  <meta name="description" content="CleanCut privacy details: video processing stays on your Mac, with limited connections for licensing and update checks.">
+  <meta name="description" content="Toolshelf privacy details: CleanCut and PolishKey process locally, with limited connections for licensing and update checks.">
   <link rel="canonical" href="https://envelopesapp.github.io/tools-site/privacy.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <title>Privacy | CleanCut</title>
-  <link rel="stylesheet" href="styles.css?v=20260619d">
+  <title>Privacy | Toolshelf</title>
+  <link rel="stylesheet" href="styles.css?v=20260622a">
   <script src="assets/lucide.min.js" defer></script>
   <script src="site.js" defer></script>
 </head>
@@ -20,6 +20,7 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><i data-lucide="menu" aria-hidden="true"></i><span>Menu</span></button>
       <nav class="nav-links" id="site-menu" aria-label="Primary navigation">
         <a href="index.html">CleanCut</a>
+        <a href="polishkey.html">PolishKey</a>
         <a href="apps.html">Apps</a>
         <a href="about.html">About</a>
         <a href="support.html">Support</a>
@@ -32,8 +33,8 @@
     <section class="page-hero">
       <div class="shell">
         <p class="eyebrow">Privacy</p>
-        <h1>Your videos stay on your Mac.</h1>
-        <p>CleanCut was designed around local processing. This page explains what stays on the computer and the limited situations where the app connects to an outside service.</p>
+        <h1>Your work stays on your computer.</h1>
+        <p>Toolshelf apps are designed around local processing. This page explains what stays on the computer and the limited situations where an app connects to an outside service.</p>
       </div>
     </section>
 
@@ -42,6 +43,7 @@
         <nav class="content-nav" aria-label="Privacy page sections">
           <strong>On this page</strong>
           <a href="#videos">Video processing</a>
+          <a href="#polishkey">Text rewrites</a>
           <a href="#network">Network connections</a>
           <a href="#license">License data</a>
           <a href="#website">Website</a>
@@ -55,21 +57,28 @@
             <p>CleanCut does not send your video, audio, transcript, subtitle text, filenames, or detected words to Envelopes or an AI service.</p>
           </section>
 
+          <section class="prose-section" id="polishkey">
+            <p class="eyebrow">PolishKey text rewrites</p>
+            <h2>PolishKey rewrites selected text locally.</h2>
+            <p>The text you select for a rewrite is sent to the local model provider configured on your computer. The planned public build bundles the local runtime and default model cache so rewriting does not require sending drafts to an Envelopes cloud AI service.</p>
+            <p>PolishKey does not send selected text, rewritten text, clipboard contents, app names, or surrounding document content to Envelopes for AI processing.</p>
+          </section>
+
           <section class="prose-section" id="network">
             <p class="eyebrow">Network connections</p>
             <h2>The app connects for two narrow purposes.</h2>
             <h3>License activation and validation</h3>
-            <p>When you activate, validate, or remove a paid license, CleanCut contacts Polar's customer license service. The request includes the license key, activation identifier, app/platform labels, and a hashed machine identifier used to enforce the one-computer activation limit.</p>
+            <p>When you activate, validate, or remove a paid license, CleanCut or PolishKey contacts Polar's customer license service. The request includes the license key, activation identifier, app/platform labels, and a hashed machine identifier used to enforce the one-computer activation limit.</p>
             <h3>Update checks and downloads</h3>
-            <p>CleanCut checks the public EnvelopesApp GitHub Releases feed to see whether a newer signed version exists. If you choose to update, your browser downloads the notarized DMG from GitHub.</p>
-            <p>If either service is unavailable, your video files remain local. A temporary network failure does not upload media or hand processing to a remote fallback.</p>
+            <p>Toolshelf apps check their public EnvelopesApp GitHub Releases feed to see whether a newer signed version exists. If you choose to update, your browser downloads the notarized installer from GitHub.</p>
+            <p>If either service is unavailable, your media or selected text remains local. A temporary network failure does not upload work or hand processing to a remote fallback.</p>
           </section>
 
           <section class="prose-section" id="license">
             <p class="eyebrow">Local settings</p>
             <h2>Preferences and activation state stay in Application Support.</h2>
-            <p>CleanCut stores app preferences, free-trial usage, and license activation state on your Mac. Replacing the app during an update does not normally remove this information.</p>
-            <p>To release a computer's activation, use the Remove or Deactivate option in CleanCut Settings while connected to the internet.</p>
+            <p>CleanCut and PolishKey store app preferences, free-trial usage, and license activation state on your Mac. Replacing the app during an update does not normally remove this information.</p>
+            <p>To release a computer's activation, use the Remove or Deactivate option in the app's Settings while connected to the internet.</p>
           </section>
 
           <section class="prose-section" id="website">
@@ -93,7 +102,7 @@
   <footer class="site-footer">
     <div class="shell footer-grid">
       <div><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Toolshelf</span></a><p>Small, private tools made to solve real problems.</p></div>
-      <div class="footer-links"><a href="index.html">CleanCut</a><a href="apps.html">Apps</a><a href="about.html">About</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+      <div class="footer-links"><a href="index.html">CleanCut</a><a href="polishkey.html">PolishKey</a><a href="apps.html">Apps</a><a href="about.html">About</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
       <div class="footer-contact"><span>Support</span><a href="mailto:Envelopes.app.com@gmail.com">Envelopes.app.com@gmail.com</a></div>
     </div>
     <div class="shell footer-bottom"><span>© 2026 Envelopes. All rights reserved.</span><span>CleanCut for Mac</span></div>

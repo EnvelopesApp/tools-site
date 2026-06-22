@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-06-21",
+  "updated": "2026-06-22",
   "brand": {
     "siteName": "Toolshelf",
     "company": "Envelopes",
@@ -47,6 +47,47 @@
       "notes": [
         "CleanCut currently owns the home page until more apps are ready.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, or app storage keys for another app."
+      ]
+    },
+    {
+      "name": "PolishKey",
+      "slug": "polishkey",
+      "status": "private beta",
+      "currentVersion": "0.2.0",
+      "shortDescription": "Rewrite selected text with a private local AI model from a desktop hotkey.",
+      "longDescription": "PolishKey rewrites selected text in place using a bundled local model provider. It is built for support replies, emails, notes, and quick messages without sending drafts to cloud AI.",
+      "priceLabel": "Planned $19.99 lifetime deal",
+      "trial": "25 successful rewrites free",
+      "license": "One activated computer; customers can deactivate before moving machines.",
+      "platforms": [
+        {
+          "name": "Apple Silicon Mac",
+          "status": "staged",
+          "downloadUrl": null
+        },
+        {
+          "name": "Intel Mac",
+          "status": "coming soon",
+          "downloadUrl": null
+        },
+        {
+          "name": "Windows",
+          "status": "coming soon",
+          "downloadUrl": null
+        }
+      ],
+      "checkoutUrl": null,
+      "releaseRepo": "https://github.com/EnvelopesApp/polishkey-updates",
+      "websitePage": "polishkey.html",
+      "supportPage": "support.html",
+      "privacyPage": "privacy.html",
+      "projectPaths": [
+        "/Users/ryansp/Library/CloudStorage/OneDrive-SoutheastChristianChurch/Documents/Coding Projects/PolishKey"
+      ],
+      "notes": [
+        "PolishKey uses bundle ID com.envelopes.polishkey.",
+        "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, checkout URL, license benefit, app-storage keys, or download assets.",
+        "Flip Apple Silicon Mac to available only after the Polar checkout and notarized PolishKey.dmg are live."
       ]
     }
   ]
