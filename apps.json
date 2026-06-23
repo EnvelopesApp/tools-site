@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-06-22",
+  "updated": "2026-06-23",
   "brand": {
     "siteName": "Toolshelf",
     "company": "Envelopes",
@@ -52,18 +52,18 @@
     {
       "name": "PolishKey",
       "slug": "polishkey",
-      "status": "private beta",
-      "currentVersion": "0.2.1",
+      "status": "public beta",
+      "currentVersion": "0.2.2",
       "shortDescription": "Rewrite selected text with a private local AI model from a desktop hotkey.",
       "longDescription": "PolishKey rewrites selected text in place using a bundled local model provider. It is built for support replies, emails, notes, and quick messages without sending drafts to cloud AI.",
-      "priceLabel": "Planned $19.99 lifetime deal",
+      "priceLabel": "Limited-time $19.99 lifetime deal",
       "trial": "25 successful rewrites free",
       "license": "One activated computer; customers can deactivate before moving machines.",
       "platforms": [
         {
           "name": "Apple Silicon Mac",
-          "status": "staged",
-          "downloadUrl": null
+          "status": "available",
+          "downloadUrl": "https://github.com/EnvelopesApp/polishkey-updates/releases/latest/download/PolishKey.dmg"
         },
         {
           "name": "Intel Mac",
@@ -76,7 +76,7 @@
           "downloadUrl": null
         }
       ],
-      "checkoutUrl": null,
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_Xf1NA04IJS8psvbBpwyI0D2BSNNukuS6pwHsC0betZH",
       "releaseRepo": "https://github.com/EnvelopesApp/polishkey-updates",
       "websitePage": "polishkey.html",
       "supportPage": "support.html",
@@ -87,8 +87,8 @@
       "notes": [
         "PolishKey uses bundle ID com.envelopes.polishkey.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, checkout URL, license benefit, app-storage keys, or download assets.",
-        "Polar checkout exists but remains withheld from public CTAs until the notarized PolishKey.dmg and first real license activation/deactivation test are complete.",
-        "Flip Apple Silicon Mac to available only after the notarized PolishKey.dmg is published."
+        "Apple Silicon Mac release v0.2.2 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
+        "A real purchase, activation, deactivation, and license move test is still recommended before larger paid promotion."
       ]
     }
   ]

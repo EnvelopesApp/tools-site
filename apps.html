@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://envelopesapp.github.io/tools-site/apps.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>Apps | Toolshelf</title>
-  <link rel="stylesheet" href="styles.css?v=20260622a">
+  <link rel="stylesheet" href="styles.css?v=20260623a">
   <script src="assets/lucide.min.js" defer></script>
   <script src="site.js" defer></script>
 </head>
@@ -24,7 +24,7 @@
         <a class="active" href="apps.html">Apps</a>
         <a href="about.html">About</a>
         <a href="support.html">Support</a>
-        <a class="nav-download" href="index.html#downloads"><i data-lucide="download" aria-hidden="true"></i>Download</a>
+        <a class="nav-download" href="#polishkey-downloads"><i data-lucide="download" aria-hidden="true"></i>Download</a>
       </nav>
     </div>
   </header>
@@ -34,7 +34,7 @@
       <div class="shell">
         <p class="eyebrow">Toolshelf Apps</p>
         <h1>Focused tools, built one useful problem at a time.</h1>
-        <p>This is the growing home for Envelopes apps. CleanCut is available now, with more practical tools joining the shelf over time.</p>
+        <p>This is the growing home for Envelopes apps. CleanCut and PolishKey are available now, with more practical tools joining the shelf over time.</p>
       </div>
     </section>
 
@@ -70,19 +70,20 @@
             <img src="assets/polishkey-hero.jpg" alt="PolishKey desktop rewrite app shown in a polished product scene.">
           </div>
           <div class="catalog-copy">
-            <div class="catalog-meta"><span class="available">Private beta</span><span>macOS</span><span>Windows planned</span></div>
+            <div class="catalog-meta"><span class="available">Public beta</span><span>Apple Silicon Mac</span><span>Windows planned</span></div>
             <h2>PolishKey</h2>
-            <p>Rewrite selected text with a private local AI model from a desktop hotkey. Checkout and notarized downloads are being staged now.</p>
+            <p>Rewrite selected text with a private local AI model from a desktop hotkey. The Apple Silicon Mac build is signed, notarized, and available now.</p>
             <ul class="catalog-points">
               <li><i data-lucide="check" aria-hidden="true"></i>25 rewrites free</li>
-              <li><i data-lucide="check" aria-hidden="true"></i>Planned $19.99 lifetime deal</li>
+              <li><i data-lucide="check" aria-hidden="true"></i>Limited-time $19.99 lifetime deal</li>
               <li><i data-lucide="check" aria-hidden="true"></i>Local model included</li>
             </ul>
             <div class="catalog-actions">
               <a class="button button-quiet" href="polishkey.html">View PolishKey <i data-lucide="arrow-right" aria-hidden="true"></i></a>
             </div>
-            <div class="platform-options" role="group" aria-label="PolishKey platform downloads">
-              <span class="button button-disabled" aria-disabled="true"><i data-lucide="apple" aria-hidden="true"></i>Apple Silicon <small>Staged</small></span>
+            <div class="platform-options" id="polishkey-downloads" role="group" aria-label="PolishKey platform downloads">
+              <a class="button button-primary platform-available" href="https://github.com/EnvelopesApp/polishkey-updates/releases/latest/download/PolishKey.dmg"><i data-lucide="download" aria-hidden="true"></i>Download for Apple Silicon</a>
+              <a class="button button-secondary platform-available" href="https://buy.polar.sh/polar_cl_Xf1NA04IJS8psvbBpwyI0D2BSNNukuS6pwHsC0betZH"><i data-lucide="credit-card" aria-hidden="true"></i>Buy PolishKey</a>
               <span class="button button-disabled" aria-disabled="true"><i data-lucide="monitor" aria-hidden="true"></i>Intel Mac <small>Planned</small></span>
               <span class="button button-disabled" aria-disabled="true"><i data-lucide="panels-top-left" aria-hidden="true"></i>Windows <small>Planned</small></span>
             </div>

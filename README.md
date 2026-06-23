@@ -61,8 +61,9 @@ Website sequence:
 7. Update `sitemap.xml` when a new public HTML page is added.
 8. Commit, push, wait for GitHub Pages, and verify the live page.
 
-The current CleanCut page can remain the home page until another app is ready
-enough to justify turning `index.html` into a broader Toolshelf home.
+The current CleanCut page can remain the home page until the site is ready for
+a broader Toolshelf landing page. PolishKey is live through `polishkey.html`
+and the app catalog.
 
 ## Deployment
 
