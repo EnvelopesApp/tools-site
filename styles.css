@@ -516,19 +516,6 @@ h3 {
   font-size: 18px;
 }
 
-.product-section {
-  overflow: hidden;
-}
-
-.product-image {
-  width: min(980px, 100%);
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #46516a;
-  border-radius: 12px;
-  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.48);
-}
-
 .soft-band {
   background: var(--surface-soft);
   border-top: 1px solid var(--line);
