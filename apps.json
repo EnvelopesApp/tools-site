@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-06-26",
+  "updated": "2026-06-29",
   "brand": {
     "siteName": "Toolshelf",
     "company": "Envelopes",
@@ -53,7 +53,7 @@
       "name": "PolishKey",
       "slug": "polishkey",
       "status": "public beta",
-      "currentVersion": "0.2.5",
+      "currentVersion": "0.2.6",
       "shortDescription": "Rewrite selected text with a private local AI model from a desktop hotkey.",
       "longDescription": "PolishKey rewrites selected text in place using a bundled local model provider. It is built for support replies, emails, notes, and quick messages without sending drafts to cloud AI.",
       "priceLabel": "Limited-time $19.99 lifetime deal",
@@ -87,7 +87,8 @@
       "notes": [
         "PolishKey uses bundle ID com.envelopes.polishkey.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, checkout URL, license benefit, app-storage keys, or download assets.",
-        "Apple Silicon Mac release v0.2.5 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
+        "Apple Silicon Mac release v0.2.6 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
+        "Version 0.2.6 adds an early single-instance guard so launch-at-login plus a manual open stays to one app process.",
         "A real purchase, activation, deactivation, and license move test is still recommended before larger paid promotion."
       ]
     }
