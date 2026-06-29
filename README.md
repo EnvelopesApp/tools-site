@@ -20,6 +20,8 @@ Static GitHub Pages site for Envelopes App products.
 - `docs/APP_AGENT_TEMPLATE.md`: starter `AGENTS.md` / `CLAUDE.md` for new apps
 - `docs/APP_PRODUCT_RECORD_TEMPLATE.md`: starter product record for new apps
 - `assets/cleancut-hero.jpg`: generated launch hero artwork
+- `assets/cleancut-demo.mp4`: CleanCut demo video used on the home page
+- `assets/cleancut-demo-captions.vtt`: captions for the CleanCut demo video
 - `assets/lucide.min.js`: locally hosted interface icons
 
 The CleanCut card currently advertises:
