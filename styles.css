@@ -744,6 +744,22 @@ h3 {
   gap: 12px;
 }
 
+.demo-media {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(17, 23, 34, 0.78);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+}
+
+.demo-media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  background: #05070b;
+}
+
 .demo-card {
   position: relative;
   min-height: 218px;
