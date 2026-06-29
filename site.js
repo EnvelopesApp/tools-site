@@ -17,6 +17,20 @@ if (menuButton && menu) {
   });
 }
 
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const hash = link.getAttribute("href");
+    if (!hash || hash === "#") return;
+
+    const target = document.getElementById(hash.slice(1));
+    if (!target) return;
+
+    event.preventDefault();
+    history.pushState(null, "", hash);
+    target.scrollIntoView({ block: "start" });
+  });
+});
+
 if (window.lucide) {
   window.lucide.createIcons({
     attrs: {

@@ -720,6 +720,7 @@ h3 {
 
 .demo-section {
   position: relative;
+  scroll-margin-top: calc(var(--header-height) + 18px);
   background:
     linear-gradient(180deg, rgba(9, 12, 18, 0.96), rgba(13, 18, 26, 0.98)),
     #0c1119;

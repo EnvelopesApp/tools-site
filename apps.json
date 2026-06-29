@@ -39,7 +39,7 @@
       "releaseRepo": "https://github.com/EnvelopesApp/cleancut-updates",
       "websitePage": "index.html",
       "demo": {
-        "pageAnchor": "index.html#cleancut-demo-title",
+        "pageAnchor": "index.html#cleancut-demo",
         "summary": "Choose a video, select cleanup tools, process locally, and open the finished clean copy."
       },
       "supportPage": "support.html",
