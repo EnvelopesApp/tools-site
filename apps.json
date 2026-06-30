@@ -57,7 +57,7 @@
       "name": "PolishKey",
       "slug": "polishkey",
       "status": "public beta",
-      "currentVersion": "0.2.21",
+      "currentVersion": "0.2.23",
       "shortDescription": "Rewrite selected text with a private local AI model from a desktop hotkey.",
       "longDescription": "PolishKey rewrites selected text in place using a private local rewrite engine. It includes distinct Friendly, Professional, and Custom rewrite modes for support replies, emails, notes, and quick messages without sending drafts to cloud AI.",
       "priceLabel": "Limited-time $19.99 lifetime deal",
@@ -95,8 +95,8 @@
       "notes": [
         "PolishKey uses bundle ID com.envelopes.polishkey.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, checkout URL, license benefit, app-storage keys, or download assets.",
-        "Apple Silicon Mac release v0.2.21 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
-        "Version 0.2.21 fixes optional Balanced/Careful quality setup, shows visible preparing/download progress, and prevents invisible background model downloads.",
+        "Apple Silicon Mac release v0.2.23 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
+        "Version 0.2.23 moves Careful/Balanced to non-thinking Qwen2.5 instruct models, blocks reasoning leaks, and adds a thinking indicator while rewrites run.",
         "A real purchase, activation, deactivation, and license move test is still recommended before larger paid promotion."
       ]
     }
