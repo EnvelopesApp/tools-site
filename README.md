@@ -23,6 +23,8 @@ Static GitHub Pages site for Envelopes App products.
 - `assets/cleancut-demo-1920x1080.mp4`: CleanCut demo video used on the home page
 - `assets/cleancut-demo-1920x1080-captions.vtt`: captions for the CleanCut demo video
 - `assets/lucide.min.js`: locally hosted interface icons
+- `analytics-worker/`: private Cloudflare Worker + D1 dashboard for launch
+  analytics
 
 The CleanCut card currently advertises:
 
@@ -80,6 +82,21 @@ git push origin main
 ```
 
 Then verify the live page after GitHub Pages deploys.
+
+## Analytics dashboard
+
+The private launch dashboard is deployed as a Cloudflare Worker:
+
+<https://toolshelf-analytics.envelopes-app-com.workers.dev/admin>
+
+It stores simple website events in D1: page views, paid landings, demo plays,
+download clicks, checkout clicks, support email clicks, campaign parameters,
+referrer host, broad device type, language, and country. It does not store raw
+IP addresses, source videos, selected text, transcripts, license keys, or card
+details.
+
+The dashboard uses Basic Auth. The username is `ryan`; the password is stored
+as the Worker secret `DASHBOARD_PASSWORD`.
 
 ## Release boundary
 

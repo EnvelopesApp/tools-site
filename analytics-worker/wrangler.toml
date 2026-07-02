@@ -1,0 +1,12 @@
+name = "toolshelf-analytics"
+main = "src/index.js"
+compatibility_date = "2026-07-02"
+
+[vars]
+ADMIN_USERNAME = "ryan"
+ALLOWED_ORIGINS = "https://envelopesapp.github.io,http://localhost:8787,http://127.0.0.1:8787"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "toolshelf_analytics"
+database_id = "16e875b5-cf04-412e-9c7b-820be520dcfd"
