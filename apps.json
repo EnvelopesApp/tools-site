@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-06-30",
+  "updated": "2026-07-02",
   "brand": {
     "siteName": "Toolshelf",
     "company": "Envelopes",
@@ -13,9 +13,9 @@
       "slug": "cleancut",
       "status": "public beta",
       "currentVersion": "1.0.42",
-      "shortDescription": "Mute profanity, generate subtitles, and convert videos privately on your Mac.",
-      "longDescription": "CleanCut cleans up videos on-device. It can mute profanity, create SRT or embedded subtitles, and convert difficult video files into a broadly compatible MP4 without uploading source media.",
-      "priceLabel": "Limited-time $19.99 lifetime deal",
+      "shortDescription": "Clean up video files before sharing them: mute profanity, generate subtitles, or convert to a more compatible MP4 on your Mac.",
+      "longDescription": "CleanCut cleans up videos on-device. It can mute profanity, create SRT or embedded subtitles, and convert difficult video files into a broadly compatible MP4 without uploading source media. Use one, two, or all three tools on videos you already have.",
+      "priceLabel": "$19.99 one-time lifetime license",
       "trial": "3 completed videos free",
       "license": "One activated computer; customers can deactivate before moving Macs.",
       "platforms": [
@@ -50,6 +50,8 @@
       ],
       "notes": [
         "CleanCut currently owns the home page until more apps are ready.",
+        "Marketing focus shifted toward private video cleanup for files people already have before sharing.",
+        "Website promises 14-day refund help for buyers whose setup does not work.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, or app storage keys for another app."
       ]
     },
