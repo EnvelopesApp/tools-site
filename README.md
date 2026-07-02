@@ -91,12 +91,17 @@ The private launch dashboard is deployed as a Cloudflare Worker:
 
 It stores simple website events in D1: page views, paid landings, demo plays,
 download clicks, checkout clicks, support email clicks, campaign parameters,
-referrer host, broad device type, language, and country. It does not store raw
-IP addresses, source videos, selected text, transcripts, license keys, or card
+referrer host, broad device type, language, and country. It also accepts signed
+Polar webhooks at `/polar/webhook` for paid/refunded orders so the dashboard can
+show purchases and revenue. It does not store raw IP addresses, source videos,
+selected text, transcripts, license keys, Polar buyer names/emails, or card
 details.
 
 The dashboard uses Basic Auth. The username is `ryan`; the password is stored
 as the Worker secret `DASHBOARD_PASSWORD`.
+
+The Polar webhook secret is stored as the Worker secret
+`POLAR_WEBHOOK_SECRET`.
 
 ## Release boundary
 

@@ -64,6 +64,10 @@ if (window.lucide) {
     const click = classifyLink(link);
     if (!click) return;
 
+    if (click.kind === "checkout") {
+      decorateCheckoutLink(link, activeCampaign);
+    }
+
     track(click.event, {
       app: click.app || inferPageApp(),
       targetUrl: link.href,
@@ -198,6 +202,31 @@ if (window.lucide) {
     }
 
     return null;
+  }
+
+  function decorateCheckoutLink(link, campaignData = {}) {
+    try {
+      const url = new URL(link.href);
+      url.searchParams.set("reference_id", getSessionId());
+
+      const mapping = {
+        source: "utm_source",
+        medium: "utm_medium",
+        campaign: "utm_campaign",
+        content: "utm_content",
+        term: "utm_term"
+      };
+
+      Object.entries(mapping).forEach(([key, param]) => {
+        if (campaignData[key]) {
+          url.searchParams.set(param, campaignData[key]);
+        }
+      });
+
+      link.href = url.toString();
+    } catch {
+      // Leave the original checkout URL untouched if URL parsing fails.
+    }
   }
 
   function inferPageApp() {
