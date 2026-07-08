@@ -67,19 +67,21 @@
 
           <section class="prose-section" id="polishkey">
             <p class="eyebrow">PolishKey text rewrites</p>
-            <h2>PolishKey rewrites selected text locally.</h2>
-            <p>The text you select for a rewrite is sent to the local model provider configured on your computer. The Apple Silicon Mac build bundles the local runtime and default model cache so rewriting does not require sending drafts to an Envelopes cloud AI service.</p>
-            <p>PolishKey does not send selected text, rewritten text, clipboard contents, app names, or surrounding document content to Envelopes for AI processing.</p>
+            <h2>PolishKey rewrites selected text locally by default.</h2>
+            <p>The text you select for a rewrite is sent to the model provider configured in PolishKey. The Apple Silicon Mac build bundles the local runtime and default model cache so rewriting works without a cloud AI account.</p>
+            <p>If you choose the optional Gemini provider and enter your own API key, selected text is sent to Google's Gemini API for that rewrite. PolishKey does not send selected text, rewritten text, clipboard contents, app names, or surrounding document content to Envelopes for AI processing.</p>
           </section>
 
           <section class="prose-section" id="network">
             <p class="eyebrow">Network connections</p>
-            <h2>The app connects for two narrow purposes.</h2>
+            <h2>The app connects for a few narrow purposes.</h2>
             <h3>License activation and validation</h3>
             <p>When you activate, validate, or remove a paid license, CleanCut or PolishKey contacts Polar's customer license service. The request includes the license key, activation identifier, app/platform labels, and a hashed machine identifier used to enforce the one-computer activation limit.</p>
             <h3>Update checks and downloads</h3>
             <p>Toolshelf apps check their public EnvelopesApp GitHub Releases feed to see whether a newer signed version exists. If you choose to update, your browser downloads the notarized installer from GitHub.</p>
-            <p>If either service is unavailable, your media or selected text remains local. A temporary network failure does not upload work or hand processing to a remote fallback.</p>
+            <h3>Optional cloud rewrite provider</h3>
+            <p>PolishKey can use Gemini only when you select Gemini in Settings and provide your own Gemini API key. Local rewrite mode remains available without that key.</p>
+            <p>If a required service is unavailable, your media or selected text remains local unless you have explicitly chosen a cloud rewrite provider for that action. A temporary network failure does not upload work or hand processing to a remote fallback.</p>
           </section>
 
           <section class="prose-section" id="license">

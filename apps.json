@@ -59,9 +59,9 @@
       "name": "PolishKey",
       "slug": "polishkey",
       "status": "public beta",
-      "currentVersion": "0.2.31",
-      "shortDescription": "Rewrite selected text with a private local AI model from a desktop hotkey.",
-      "longDescription": "PolishKey rewrites selected text in place using a private local rewrite engine. It includes distinct Friendly, Professional, and Custom rewrite modes for support replies, emails, notes, and quick messages without sending drafts to cloud AI.",
+      "currentVersion": "0.2.33",
+      "shortDescription": "Rewrite selected text from a desktop hotkey, local by default with optional Gemini support.",
+      "longDescription": "PolishKey rewrites selected text in place using a bundled local rewrite engine by default. It includes distinct Friendly, Professional, and Custom rewrite modes for support replies, emails, notes, and quick messages, plus an optional bring-your-own-key Gemini provider for users who choose cloud AI.",
       "priceLabel": "Limited-time $19.99 lifetime deal",
       "trial": "25 successful rewrites free",
       "license": "One activated computer; customers can deactivate before moving machines.",
@@ -97,8 +97,8 @@
       "notes": [
         "PolishKey uses bundle ID com.envelopes.polishkey.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, checkout URL, license benefit, app-storage keys, or download assets.",
-        "Apple Silicon Mac release v0.2.31 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
-        "Version 0.2.31 fixes context handling for third-party source names, discards glued unrelated response fragments, and keeps stronger rewrites more conservative.",
+        "Apple Silicon Mac release v0.2.33 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
+        "Version 0.2.33 adds a guarded optional Gemini provider, explicit selected-text rewrite framing, Gemini thinking config, thought-part filtering, and source-loss fallback protection.",
         "A real purchase, activation, deactivation, and license move test is still recommended before larger paid promotion."
       ]
     }
