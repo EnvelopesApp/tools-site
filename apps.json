@@ -59,7 +59,7 @@
       "name": "PolishKey",
       "slug": "polishkey",
       "status": "public beta",
-      "currentVersion": "0.2.33",
+      "currentVersion": "0.2.34",
       "shortDescription": "Rewrite selected text from a desktop hotkey, local by default with optional Gemini support.",
       "longDescription": "PolishKey rewrites selected text in place using a bundled local rewrite engine by default. It includes distinct Friendly, Professional, and Custom rewrite modes for support replies, emails, notes, and quick messages, plus an optional bring-your-own-key Gemini provider for users who choose cloud AI.",
       "priceLabel": "Limited-time $19.99 lifetime deal",
@@ -97,8 +97,9 @@
       "notes": [
         "PolishKey uses bundle ID com.envelopes.polishkey.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, checkout URL, license benefit, app-storage keys, or download assets.",
-        "Apple Silicon Mac release v0.2.33 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
+        "Apple Silicon Mac release v0.2.34 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
         "Version 0.2.33 adds a guarded optional Gemini provider, explicit selected-text rewrite framing, Gemini thinking config, thought-part filtering, and source-loss fallback protection.",
+        "Version 0.2.34 upgrades Balanced/Careful local quality to qwen3:4b-instruct models, adds automatic Gemini daily-quota fallback to the local engine with automatic recovery, blocks unsafe hotkeys like Cmd+C, and allows single function-key hotkeys.",
         "A real purchase, activation, deactivation, and license move test is still recommended before larger paid promotion."
       ]
     }
