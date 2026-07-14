@@ -4,7 +4,7 @@ compatibility_date = "2026-07-02"
 
 [vars]
 ADMIN_USERNAME = "ryan"
-ALLOWED_ORIGINS = "https://envelopesapp.github.io,http://localhost:8787,http://127.0.0.1:8787"
+ALLOWED_ORIGINS = "https://builtuseful.com,https://www.builtuseful.com,https://envelopesapp.github.io,http://localhost:8787,http://127.0.0.1:8787"
 
 [[d1_databases]]
 binding = "DB"
