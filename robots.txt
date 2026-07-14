@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://envelopesapp.github.io/tools-site/sitemap.xml
+Sitemap: https://builtuseful.com/sitemap.xml

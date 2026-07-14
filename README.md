@@ -1,10 +1,10 @@
-# Toolshelf Website
+# Built Useful Website
 
 Static GitHub Pages site for Envelopes App products.
 
 ## Live site
 
-<https://envelopesapp.github.io/tools-site/>
+<https://builtuseful.com/>
 
 ## Pages
 
@@ -12,7 +12,7 @@ Static GitHub Pages site for Envelopes App products.
 - `apps.html`: expandable catalog for CleanCut, PolishKey, Envelopes, and future products
 - `polishkey.html`: PolishKey product, pricing, download, and purchase page
 - `envelopes.html`: Envelopes App Store product page
-- `about.html`: Toolshelf/Envelopes product principles and contact
+- `about.html`: Built Useful product principles and contact
 - `support.html`: installation, license, update, and processing help
 - `privacy.html`: local-processing and network-connection disclosure
 - `styles.css`: shared responsive design
@@ -75,7 +75,7 @@ Website sequence:
 8. Commit, push, wait for GitHub Pages, and verify the live page.
 
 The current CleanCut page can remain the home page until the site is ready for
-a broader Toolshelf landing page. PolishKey is live through `polishkey.html`,
+a broader Built Useful landing page. PolishKey is live through `polishkey.html`,
 Envelopes is live through `envelopes.html`, and both are represented in the app
 catalog.
 
