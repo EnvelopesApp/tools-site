@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-07-02",
+  "updated": "2026-07-14",
   "brand": {
     "siteName": "Toolshelf",
     "company": "Envelopes",
@@ -101,6 +101,55 @@
         "Version 0.2.33 adds a guarded optional Gemini provider, explicit selected-text rewrite framing, Gemini thinking config, thought-part filtering, and source-loss fallback protection.",
         "Version 0.2.34 upgrades Balanced/Careful local quality to qwen3:4b-instruct models, adds automatic Gemini daily-quota fallback to the local engine with automatic recovery, blocks unsafe hotkeys like Cmd+C, and allows single function-key hotkeys.",
         "A real purchase, activation, deactivation, and license move test is still recommended before larger paid promotion."
+      ]
+    },
+    {
+      "name": "Envelopes",
+      "slug": "envelopes",
+      "status": "available",
+      "currentVersion": "1.0",
+      "shortDescription": "A simple envelope budgeting app for iPhone and iPad that helps you give every dollar a job without linking your bank.",
+      "longDescription": "Envelopes is a zero-based envelope budgeting app for people who want a clear plan without bank-linking or financial noise. Create accounts and envelopes, assign real money to the jobs it needs to do, log spending, plan bills, and optionally sync through an Envelopes account.",
+      "priceLabel": "14-day free trial, then $2.99/month or $24.99/year",
+      "trial": "14-day free trial",
+      "license": "Auto-renewable App Store subscription unlocks full native iOS access after the trial. The web app is intentionally not gated by store billing.",
+      "platforms": [
+        {
+          "name": "iPhone and iPad",
+          "status": "available",
+          "downloadUrl": "https://apps.apple.com/us/app/envelopes-the-budgeting-app/id6782375480"
+        },
+        {
+          "name": "Web app",
+          "status": "available",
+          "downloadUrl": "https://envelopes-cv5.pages.dev"
+        },
+        {
+          "name": "Android",
+          "status": "planned",
+          "downloadUrl": null
+        }
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/envelopes-the-budgeting-app/id6782375480",
+      "webAppUrl": "https://envelopes-cv5.pages.dev",
+      "checkoutUrl": null,
+      "releaseRepo": "https://github.com/EnvelopesApp/envelopes-app",
+      "websitePage": "envelopes.html",
+      "demo": {
+        "pageAnchor": "envelopes.html#envelopes-screens",
+        "summary": "See the Envelopes budget, calendar, and account screens from the live App Store listing."
+      },
+      "supportPage": "support.html#envelopes",
+      "privacyPage": "privacy.html#envelopes",
+      "projectPaths": [
+        "/Users/ryansp/Library/CloudStorage/OneDrive-SoutheastChristianChurch/Documents/Coding Projects/Budgeting App"
+      ],
+      "notes": [
+        "Bundle ID is com.envelopes.app.",
+        "App Store product ID is 6782375480.",
+        "Subscriptions are envelopes_monthly ($2.99/month) and envelopes_annual ($24.99/year), both with a 14-day free trial.",
+        "Do not reuse CleanCut or PolishKey Polar IDs, license rules, release assets, storage keys, or bundle IDs.",
+        "The web app and sync backend live at https://envelopes-cv5.pages.dev."
       ]
     }
   ]

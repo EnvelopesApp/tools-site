@@ -184,6 +184,15 @@ if (window.lucide) {
       };
     }
 
+    if (href.includes("apps.apple.com") && href.includes("id6782375480")) {
+      return {
+        event: "download_click",
+        app: "envelopes",
+        kind: "app_store",
+        platform: "ios_app_store"
+      };
+    }
+
     if (href.includes("buy.polar.sh")) {
       return {
         event: "checkout_click",
@@ -231,6 +240,7 @@ if (window.lucide) {
 
   function inferPageApp() {
     const path = window.location.pathname.toLowerCase();
+    if (path.includes("envelopes")) return "envelopes";
     if (path.includes("polishkey")) return "polishkey";
     if (path.endsWith("/") || path.includes("index.html")) return "cleancut";
     return "toolshelf";

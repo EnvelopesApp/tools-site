@@ -9,7 +9,9 @@ Static GitHub Pages site for Envelopes App products.
 ## Pages
 
 - `index.html`: CleanCut product, pricing, download, and purchase page
-- `apps.html`: expandable catalog for CleanCut and future products
+- `apps.html`: expandable catalog for CleanCut, PolishKey, Envelopes, and future products
+- `polishkey.html`: PolishKey product, pricing, download, and purchase page
+- `envelopes.html`: Envelopes App Store product page
 - `about.html`: Toolshelf/Envelopes product principles and contact
 - `support.html`: installation, license, update, and processing help
 - `privacy.html`: local-processing and network-connection disclosure
@@ -22,6 +24,13 @@ Static GitHub Pages site for Envelopes App products.
 - `assets/cleancut-hero.jpg`: generated launch hero artwork
 - `assets/cleancut-demo-1920x1080.mp4`: CleanCut demo video used on the home page
 - `assets/cleancut-demo-1920x1080-captions.vtt`: captions for the CleanCut demo video
+- `assets/polishkey-hero.jpg`: PolishKey hero artwork
+- `assets/polishkey-demo.mp4`: PolishKey demo video
+- `assets/polishkey-demo-captions.vtt`: captions for the PolishKey demo video
+- `assets/envelopes-budget.jpg`: Envelopes App Store budget screenshot
+- `assets/envelopes-calendar.jpg`: Envelopes App Store calendar screenshot
+- `assets/envelopes-accounts.jpg`: Envelopes App Store accounts screenshot
+- `assets/envelopes-icon.png`: Envelopes app icon
 - `assets/lucide.min.js`: locally hosted interface icons
 - `analytics-worker/`: private Cloudflare Worker + D1 dashboard for launch
   analytics
@@ -66,8 +75,9 @@ Website sequence:
 8. Commit, push, wait for GitHub Pages, and verify the live page.
 
 The current CleanCut page can remain the home page until the site is ready for
-a broader Toolshelf landing page. PolishKey is live through `polishkey.html`
-and the app catalog.
+a broader Toolshelf landing page. PolishKey is live through `polishkey.html`,
+Envelopes is live through `envelopes.html`, and both are represented in the app
+catalog.
 
 ## Deployment
 
@@ -75,7 +85,7 @@ The site is plain `index.html` served by GitHub Pages from this repository.
 After reviewing a change:
 
 ```bash
-git add index.html apps.html about.html support.html privacy.html styles.css site.js \
+git add index.html polishkey.html envelopes.html apps.html about.html support.html privacy.html styles.css site.js \
   apps.json docs assets favicon.svg robots.txt sitemap.xml README.md AGENTS.md CLAUDE.md
 git commit -m "Describe the site change"
 git push origin main

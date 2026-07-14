@@ -225,6 +225,12 @@ button {
   background-size: cover;
 }
 
+.envelopes-hero {
+  background-image: url("assets/envelopes-budget.jpg");
+  background-position: 72% center;
+  background-size: cover;
+}
+
 .hero-shade {
   position: absolute;
   inset: 0;
@@ -236,6 +242,12 @@ button {
   background:
     linear-gradient(90deg, rgba(4, 7, 12, 0.9), rgba(4, 7, 12, 0.68) 46%, rgba(4, 7, 12, 0.26)),
     rgba(4, 7, 12, 0.28);
+}
+
+.envelopes-hero .hero-shade {
+  background:
+    linear-gradient(90deg, rgba(4, 7, 12, 0.92), rgba(4, 7, 12, 0.7) 48%, rgba(4, 7, 12, 0.34)),
+    rgba(4, 7, 12, 0.22);
 }
 
 .hero-content {
@@ -557,6 +569,50 @@ h3 {
   aspect-ratio: 16 / 9;
   border-radius: 6px;
   background: #05070b;
+}
+
+.screenshot-section {
+  background:
+    linear-gradient(180deg, rgba(9, 12, 18, 0.96), rgba(13, 18, 26, 0.98)),
+    #0c1119;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.screenshot-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(520px, 1fr);
+  gap: 70px;
+  align-items: center;
+}
+
+.screenshot-layout .section-heading {
+  margin-bottom: 0;
+}
+
+.screen-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 0.58fr);
+  gap: 16px;
+  align-items: end;
+}
+
+.screen-gallery img {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  background: #111722;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.36);
+}
+
+.screen-gallery img:nth-child(2) {
+  transform: translateY(24px);
+}
+
+.screen-gallery img:nth-child(3) {
+  grid-column: 1 / -1;
+  width: min(72%, 520px);
+  margin-left: auto;
 }
 
 .feature-grid {
@@ -1075,6 +1131,18 @@ h3 {
   display: none;
 }
 
+.catalog-screenshot.envelopes-card-visual {
+  background:
+    radial-gradient(circle at 25% 18%, rgba(69, 212, 157, 0.16), transparent 34%),
+    radial-gradient(circle at 82% 78%, rgba(91, 140, 255, 0.14), transparent 36%),
+    #0b111b;
+}
+
+.catalog-screenshot.envelopes-card-visual img {
+  width: min(480px, 84%);
+  border-radius: 20px;
+}
+
 .catalog-visual::after {
   content: "";
   position: absolute;
@@ -1307,12 +1375,14 @@ h3 {
 
   .feature-grid,
   .demo-layout,
+  .screenshot-layout,
   .pricing-layout,
   .workflow-layout {
     grid-template-columns: 1fr;
   }
 
-  .demo-layout {
+  .demo-layout,
+  .screenshot-layout {
     gap: 38px;
   }
 
@@ -1423,6 +1493,14 @@ h3 {
     background-position: 64% center;
   }
 
+  .envelopes-hero {
+    background-position: 62% center;
+  }
+
+  .envelopes-hero h1 {
+    font-size: clamp(50px, 17vw, 70px);
+  }
+
   .hero-shade {
     background: rgba(3, 6, 10, 0.48);
     box-shadow: inset 0 -280px 170px rgba(3, 6, 10, 0.83);
@@ -1431,6 +1509,11 @@ h3 {
   .polishkey-hero .hero-shade {
     background: rgba(3, 6, 10, 0.56);
     box-shadow: inset 0 -300px 180px rgba(3, 6, 10, 0.9);
+  }
+
+  .envelopes-hero .hero-shade {
+    background: rgba(3, 6, 10, 0.54);
+    box-shadow: inset 0 -320px 180px rgba(3, 6, 10, 0.9);
   }
 
   .hero-content {
@@ -1557,6 +1640,18 @@ h3 {
 
   .catalog-actions .button {
     width: 100%;
+  }
+
+  .screen-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .screen-gallery img:nth-child(2),
+  .screen-gallery img:nth-child(3) {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+    grid-column: auto;
   }
 
   .platform-options {
