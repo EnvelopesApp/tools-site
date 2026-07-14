@@ -112,17 +112,12 @@
       "longDescription": "Envelopes is a zero-based envelope budgeting app for people who want a clear plan without bank-linking or financial noise. Create accounts and envelopes, assign real money to the jobs it needs to do, log spending, plan bills, and optionally sync through an Envelopes account.",
       "priceLabel": "14-day free trial, then $2.99/month or $24.99/year",
       "trial": "14-day free trial",
-      "license": "Auto-renewable App Store subscription unlocks full native iOS access after the trial. The web app is intentionally not gated by store billing.",
+      "license": "Auto-renewable App Store subscription unlocks full native iOS access after the trial.",
       "platforms": [
         {
           "name": "iPhone and iPad",
           "status": "available",
           "downloadUrl": "https://apps.apple.com/us/app/envelopes-the-budgeting-app/id6782375480"
-        },
-        {
-          "name": "Web app",
-          "status": "available",
-          "downloadUrl": "https://envelopes-cv5.pages.dev"
         },
         {
           "name": "Android",
@@ -131,7 +126,6 @@
         }
       ],
       "appStoreUrl": "https://apps.apple.com/us/app/envelopes-the-budgeting-app/id6782375480",
-      "webAppUrl": "https://envelopes-cv5.pages.dev",
       "checkoutUrl": null,
       "releaseRepo": "https://github.com/EnvelopesApp/envelopes-app",
       "websitePage": "envelopes.html",
@@ -149,7 +143,7 @@
         "App Store product ID is 6782375480.",
         "Subscriptions are envelopes_monthly ($2.99/month) and envelopes_annual ($24.99/year), both with a 14-day free trial.",
         "Do not reuse CleanCut or PolishKey Polar IDs, license rules, release assets, storage keys, or bundle IDs.",
-        "The web app and sync backend live at https://envelopes-cv5.pages.dev."
+        "The public sales path is the App Store listing."
       ]
     }
   ]
