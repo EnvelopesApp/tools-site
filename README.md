@@ -8,7 +8,8 @@ Static GitHub Pages site for Envelopes App products.
 
 ## Pages
 
-- `index.html`: CleanCut product, pricing, download, and purchase page
+- `index.html`: Built Useful home and three-app catalog
+- `cleancut.html`: CleanCut product, pricing, download, and purchase page
 - `apps.html`: expandable catalog for CleanCut, PolishKey, Envelopes, and future products
 - `polishkey.html`: PolishKey product, pricing, download, and purchase page
 - `envelopes.html`: Envelopes App Store product page
@@ -74,10 +75,8 @@ Website sequence:
 7. Update `sitemap.xml` when a new public HTML page is added.
 8. Commit, push, wait for GitHub Pages, and verify the live page.
 
-The current CleanCut page can remain the home page until the site is ready for
-a broader Built Useful landing page. PolishKey is live through `polishkey.html`,
-Envelopes is live through `envelopes.html`, and both are represented in the app
-catalog.
+The home page showcases all public apps. CleanCut, PolishKey, and Envelopes
+each have a dedicated product page and are represented in the app catalog.
 
 ## Deployment
 

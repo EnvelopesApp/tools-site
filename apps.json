@@ -37,9 +37,9 @@
       ],
       "checkoutUrl": "https://buy.polar.sh/polar_cl_ecQVRK65Frv7xlwUFgsDpXMhYEspQDliIrXDZ1W9nYR",
       "releaseRepo": "https://github.com/EnvelopesApp/cleancut-updates",
-      "websitePage": "index.html",
+      "websitePage": "cleancut.html",
       "demo": {
-        "pageAnchor": "index.html#cleancut-demo",
+        "pageAnchor": "cleancut.html#cleancut-demo",
         "summary": "Watch CleanCut turn a rough video into a clean copy without uploading the file."
       },
       "supportPage": "support.html",
@@ -49,7 +49,7 @@
         "/Users/ryansp/Developer/video_censor_mac"
       ],
       "notes": [
-        "CleanCut currently owns the home page until more apps are ready.",
+        "CleanCut has its own product page at cleancut.html; the home page showcases all public apps.",
         "Marketing focus shifted toward private video cleanup for files people already have before sharing.",
         "Website promises 14-day refund help for buyers whose setup does not work.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, or app storage keys for another app."
@@ -61,7 +61,7 @@
       "status": "public beta",
       "currentVersion": "0.2.34",
       "shortDescription": "Rewrite selected text from a desktop hotkey, local by default with optional Gemini support.",
-      "longDescription": "PolishKey rewrites selected text in place using a bundled local rewrite engine by default. It includes distinct Friendly, Professional, and Custom rewrite modes for support replies, emails, notes, and quick messages, plus an optional bring-your-own-key Gemini provider for users who choose cloud AI.",
+      "longDescription": "PolishKey rewrites selected text in place using a bundled local rewrite engine by default. Friendly, Professional, and Custom modes work across messages, emails, documents, forms, notes, and everyday writing, with an optional bring-your-own-key Gemini provider for users who choose cloud AI.",
       "priceLabel": "Limited-time $19.99 lifetime deal",
       "trial": "25 successful rewrites free",
       "license": "One activated computer; customers can deactivate before moving machines.",

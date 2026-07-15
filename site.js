@@ -242,8 +242,8 @@ if (window.lucide) {
     const path = window.location.pathname.toLowerCase();
     if (path.includes("envelopes")) return "envelopes";
     if (path.includes("polishkey")) return "polishkey";
-    if (path.endsWith("/") || path.includes("index.html")) return "cleancut";
-    return "toolshelf";
+    if (path.includes("cleancut")) return "cleancut";
+    return "built_useful";
   }
 
   function inferVideoApp(video) {
