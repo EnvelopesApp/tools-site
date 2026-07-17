@@ -5,6 +5,12 @@ compatibility_date = "2026-07-02"
 [vars]
 ADMIN_USERNAME = "ryan"
 ALLOWED_ORIGINS = "https://builtuseful.com,https://www.builtuseful.com,https://envelopesapp.github.io,http://localhost:8787,http://127.0.0.1:8787"
+GOOGLE_ADS_API_VERSION = "v24"
+GOOGLE_ADS_DEFAULT_APP = "cleancut"
+GOOGLE_ADS_DEFAULT_CAMPAIGN = "cleancut_search_test"
+
+[triggers]
+crons = ["17 */6 * * *"]
 
 [[d1_databases]]
 binding = "DB"

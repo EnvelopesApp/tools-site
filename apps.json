@@ -12,7 +12,7 @@
       "name": "CleanCut",
       "slug": "cleancut",
       "status": "public beta",
-      "currentVersion": "1.0.42",
+      "currentVersion": "1.0.43",
       "shortDescription": "Clean up video files before sharing them: mute profanity, generate subtitles, or convert to a more compatible MP4 on your Mac.",
       "longDescription": "CleanCut cleans up videos on-device. It can mute profanity, create SRT or embedded subtitles, and convert difficult video files into a broadly compatible MP4 without uploading source media. Use one, two, or all three tools on videos you already have.",
       "priceLabel": "$19.99 one-time lifetime license",
