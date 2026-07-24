@@ -59,7 +59,7 @@
       "name": "PolishKey",
       "slug": "polishkey",
       "status": "public beta",
-      "currentVersion": "0.2.35",
+      "currentVersion": "0.2.36",
       "shortDescription": "Rewrite selected text from a desktop hotkey, local by default with optional Gemini support.",
       "longDescription": "PolishKey rewrites selected text in place using one private local model by default. Friendly, Professional, and Custom modes work across messages, emails, documents, forms, notes, and everyday writing, with one Off, On, or Smart thinking control shared by local AI and the optional bring-your-own-key Gemini provider.",
       "priceLabel": "Limited-time $19.99 lifetime deal",
@@ -97,10 +97,11 @@
       "notes": [
         "PolishKey uses bundle ID com.envelopes.polishkey.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, checkout URL, license benefit, app-storage keys, or download assets.",
-        "Apple Silicon Mac release v0.2.35 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
+        "Apple Silicon Mac release v0.2.36 is signed, notarized, stapled, and published from the PolishKey-specific updates repo.",
         "Version 0.2.33 adds a guarded optional Gemini provider, explicit selected-text rewrite framing, Gemini thinking config, thought-part filtering, and source-loss fallback protection.",
         "Version 0.2.34 upgrades Balanced/Careful local quality to qwen3:4b-instruct models, adds automatic Gemini daily-quota fallback to the local engine with automatic recovery, blocks unsafe hotkeys like Cmd+C, and allows single function-key hotkeys.",
         "Version 0.2.35 replaces the local quality tiers with one on-demand Gemma 4 12B model and adds one shared Off, On, or Smart thinking control for local and Gemini rewrites.",
+        "Version 0.2.36 keeps Thinking On and complex Smart rewrites available by falling back to Gemini 2.5 with thinking when Gemini 3.5 is temporarily overloaded.",
         "A real purchase, activation, deactivation, and license move test is still recommended before larger paid promotion."
       ]
     },
