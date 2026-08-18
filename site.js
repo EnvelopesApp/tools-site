@@ -166,6 +166,15 @@ if (window.lucide) {
       return { event: "support_email_click", kind: "support_email" };
     }
 
+    if (href.includes("cleancut-updates/releases/download/windows-") && href.includes("CleanCut-Windows")) {
+      return {
+        event: "download_click",
+        app: "cleancut",
+        kind: "download",
+        platform: "windows"
+      };
+    }
+
     if (href.includes("cleancut-updates/releases/latest/download")) {
       return {
         event: "download_click",

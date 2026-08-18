@@ -12,28 +12,31 @@
       "name": "CleanCut",
       "slug": "cleancut",
       "status": "public beta",
-      "currentVersion": "1.0.43",
+      "currentVersion": "1.0.44",
       "shortDescription": "Privately mute profanity and convert video files on Mac or Windows. Mac also includes subtitles and batch processing.",
       "longDescription": "CleanCut cleans up videos on-device without uploading source media. Mac includes profanity muting, SRT or embedded subtitles, MP4 conversion, and batch processing. Windows early access includes profanity muting and MP4 conversion for individual videos.",
       "priceLabel": "$19.99 one-time lifetime license",
-      "trial": "Mac: 3 completed videos free; Windows: installer after purchase",
-      "license": "Mac: one activated computer with deactivation before moving Macs. Windows: paid-download early access; in-app activation is planned.",
+      "trial": "3 completed videos free on Mac or Windows",
+      "license": "One activated computer; customers can deactivate before moving machines.",
       "platforms": [
         {
           "name": "Apple Silicon Mac",
           "status": "available",
+          "version": "1.0.43",
           "downloadUrl": "https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut.dmg"
         },
         {
           "name": "Intel Mac",
           "status": "available",
+          "version": "1.0.43",
           "downloadUrl": "https://github.com/EnvelopesApp/cleancut-updates/releases/latest/download/CleanCut-Intel.dmg"
         },
         {
           "name": "Windows",
-          "status": "paid early access",
-          "downloadUrl": "https://buy.polar.sh/polar_cl_ecQVRK65Frv7xlwUFgsDpXMhYEspQDliIrXDZ1W9nYR",
-          "delivery": "Private Polar file-download benefit after purchase"
+          "status": "available early access",
+          "version": "1.0.44",
+          "downloadUrl": "https://github.com/EnvelopesApp/cleancut-updates/releases/download/windows-v1.0.44/CleanCut-Windows-Setup-1.0.44.exe",
+          "delivery": "Public GitHub prerelease; Polar also mirrors the installer for purchasers"
         }
       ],
       "checkoutUrl": "https://buy.polar.sh/polar_cl_ecQVRK65Frv7xlwUFgsDpXMhYEspQDliIrXDZ1W9nYR",
@@ -53,7 +56,8 @@
         "CleanCut has its own product page at cleancut.html; the home page showcases all public apps.",
         "Marketing focus shifted toward private video cleanup for files people already have before sharing.",
         "Website promises 14-day refund help for buyers whose setup does not work.",
-        "Windows 1.0.43 is delivered as a private Polar file-download benefit attached to CleanCut One-Time; it does not yet enforce in-app license activation.",
+        "Windows 1.0.44 includes the three-video trial and Polar activation, validation, and deactivation used by the paid license flow.",
+        "The Windows build is a separate GitHub prerelease so it does not replace the signed Mac release used by the stable latest-download URLs.",
         "Do not reuse CleanCut's Polar IDs, bundle ID, release repo, or app storage keys for another app."
       ]
     },
