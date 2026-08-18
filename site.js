@@ -197,7 +197,8 @@ if (window.lucide) {
       return {
         event: "checkout_click",
         app: href.includes("Xf1NA04") ? "polishkey" : "cleancut",
-        kind: "checkout"
+        kind: "checkout",
+        platform: link.dataset.platform || undefined
       };
     }
 

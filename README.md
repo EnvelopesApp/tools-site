@@ -41,12 +41,16 @@ The CleanCut card currently advertises:
 - $19.99 launch price, paid once
 - public beta / early access positioning
 - limited-time lifetime launch deal
-- 3 free videos
+- 3 free videos on Mac
 - one-computer license
-- Apple Silicon and Intel Mac
-- macOS 14 Sonoma or later
-- approximately 2 GB download
+- Apple Silicon and Intel Mac, plus paid Windows early access
+- macOS 14 Sonoma or later; 64-bit Windows 10 version 1809 or later
+- approximately 2 GB on Mac and 1.5 GB on Windows
 - private on-device video processing
+
+The Windows early-access build currently supports profanity muting and MP4
+conversion for individual videos. Subtitles, folder batches, the free trial,
+and in-app license activation remain Mac-only until they are added to Windows.
 
 Its Mac download buttons use the stable signed-release URLs:
 
@@ -56,6 +60,12 @@ Its Mac download buttons use the stable signed-release URLs:
 
 Do not replace those links with version-specific assets. Publishing a new
 CleanCut GitHub release as latest updates the downloads automatically.
+
+The Windows 1.0.43 installer is a private Polar File Downloads benefit attached
+to the existing CleanCut One-Time product. The public Windows buttons open the
+CleanCut checkout; purchasers receive the installer in Polar after payment.
+Do not expose the Windows installer at a public URL while the Windows app lacks
+in-app license enforcement.
 
 ## Adding Another App
 
