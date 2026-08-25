@@ -6,12 +6,11 @@ GitHub Releases URL.
 
 For any cross-app launch, license, download, or catalog work, read:
 
-1. `/Users/ryansp/Developer/APP_LAUNCH_PLAYBOOK.md`
+1. `docs/APP_LAUNCH_PLAYBOOK.md`
 2. this repo's `README.md`
 3. `apps.json`
 
-Follow `/Users/ryansp/Developer/video_censor_desktop/RELEASE.md` for CleanCut
+Follow `../cleancut/RELEASE.md` for CleanCut
 app releases. Do not change download buttons to unsigned builds, legacy
-payloads, or version-specific URLs. The owner has granted standing
-authorization to publish completed website changes after validation; always
-verify the GitHub Pages build and live page.
+payloads, or version-specific URLs. Publish only when the owner explicitly asks
+for it in the current task, then verify the GitHub Pages build and live page.

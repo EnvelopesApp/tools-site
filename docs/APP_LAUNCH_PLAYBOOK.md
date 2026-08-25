@@ -10,7 +10,6 @@ For every app launch thread, make sure the agent can read:
 
 - the app project folder
 - `/Users/ryansp/Developer/tools-site`
-- the root pointer: `/Users/ryansp/Developer/APP_LAUNCH_PLAYBOOK.md`
 - the canonical playbook:
   `/Users/ryansp/Developer/tools-site/docs/APP_LAUNCH_PLAYBOOK.md`
 - any existing shipped app used as a reference, such as CleanCut
@@ -23,7 +22,7 @@ At the start of a new app thread, tell the agent:
 
 ```text
 Read /Users/ryansp/Developer/AGENTS.md and
-/Users/ryansp/Developer/APP_LAUNCH_PLAYBOOK.md first. This app should ship
+/Users/ryansp/Developer/tools-site/docs/APP_LAUNCH_PLAYBOOK.md first. This app should ship
 through the same Toolshelf website, Polar licensing, and GitHub release pattern
 as CleanCut, but with its own product IDs and release assets.
 ```
@@ -59,9 +58,9 @@ Each app folder should contain these before launch:
 - `BACKUP.md`: source, signing, and recovery notes
 - platform-specific handoff docs if needed, such as `WINDOWS_HANDOFF.md`
 
-Use `/Users/ryansp/Developer/APP_AGENT_TEMPLATE.md` to create the first two.
-Use `/Users/ryansp/Developer/APP_PRODUCT_RECORD_TEMPLATE.md` to collect the
-business and release details before wiring the website.
+Use `APP_AGENT_TEMPLATE.md` to create the first two. Use
+`APP_PRODUCT_RECORD_TEMPLATE.md` to collect the business and release details
+before wiring the website.
 
 ## Polar License Pattern
 
@@ -198,8 +197,8 @@ CleanCut is the first live paid app and the best reference for:
 
 Before touching CleanCut itself, read:
 
-- `/Users/ryansp/Developer/video_censor_desktop/AGENTS.md`
-- `/Users/ryansp/Developer/video_censor_desktop/RELEASE.md`
-- `/Users/ryansp/Developer/video_censor_desktop/NEXT_STEPS.md`
-- `/Users/ryansp/Developer/video_censor_mac/README.md`
-- `/Users/ryansp/Developer/video_censor_mac/AUDIO_POLICY.md`
+- `/Users/ryansp/Developer/cleancut/AGENTS.md`
+- `/Users/ryansp/Developer/cleancut/RELEASE.md`
+- `/Users/ryansp/Developer/cleancut/NEXT_STEPS.md`
+- `/Users/ryansp/Developer/cleancut/engine/README.md`
+- `/Users/ryansp/Developer/cleancut/engine/AUDIO_POLICY.md`

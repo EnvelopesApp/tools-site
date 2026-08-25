@@ -69,8 +69,7 @@ Downloads benefit mirrors the same installer for purchasers.
 
 ## Adding Another App
 
-Start in `/Users/ryansp/Developer/APP_LAUNCH_PLAYBOOK.md`, which points to the
-version-controlled playbook in `docs/`. Every new app should have its own app
+Start in `docs/APP_LAUNCH_PLAYBOOK.md`. Every new app should have its own app
 folder instructions, Polar product/license benefit, release repo or release
 plan, and product record before the website advertises it as available.
 

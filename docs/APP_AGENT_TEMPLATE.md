@@ -14,7 +14,7 @@ Replace bracketed text before launch.
 Before any launch, license, website, release, or public-download work, read:
 
 1. `/Users/ryansp/Developer/AGENTS.md`
-2. `/Users/ryansp/Developer/APP_LAUNCH_PLAYBOOK.md`
+2. `/Users/ryansp/Developer/tools-site/docs/APP_LAUNCH_PLAYBOOK.md`
 3. this app's `README.md`
 4. this app's `RELEASE.md`
 5. this app's `NEXT_STEPS.md`
@@ -44,6 +44,5 @@ Rules:
 
 Release authority:
 
-- The owner may grant standing authorization for this app in `RELEASE.md`.
-- Until that file says publishing is authorized, prepare releases but ask before
-  publishing public assets.
+- Preparing a release does not authorize publishing it. Publish only when the
+  owner explicitly requests it in the current task.

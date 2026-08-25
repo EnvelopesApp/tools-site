@@ -48,9 +48,8 @@
       },
       "supportPage": "support.html",
       "privacyPage": "privacy.html",
-      "projectPaths": [
-        "/Users/ryansp/Developer/video_censor_desktop",
-        "/Users/ryansp/Developer/video_censor_mac"
+      "sourceRepositories": [
+        "https://github.com/EnvelopesApp/cleancut"
       ],
       "notes": [
         "CleanCut has its own product page at cleancut.html; the home page showcases all public apps.",
@@ -97,8 +96,8 @@
       },
       "supportPage": "support.html",
       "privacyPage": "privacy.html",
-      "projectPaths": [
-        "/Users/ryansp/Library/CloudStorage/OneDrive-SoutheastChristianChurch/Documents/Coding Projects/PolishKey"
+      "sourceRepositories": [
+        "https://github.com/EnvelopesApp/polishkey"
       ],
       "notes": [
         "PolishKey uses bundle ID com.envelopes.polishkey.",
@@ -148,8 +147,8 @@
       },
       "supportPage": "support.html#envelopes",
       "privacyPage": "privacy.html#envelopes",
-      "projectPaths": [
-        "/Users/ryansp/Library/CloudStorage/OneDrive-SoutheastChristianChurch/Documents/Coding Projects/Budgeting App"
+      "sourceRepositories": [
+        "https://github.com/EnvelopesApp/envelopes-app"
       ],
       "notes": [
         "Bundle ID is com.envelopes.app.",
