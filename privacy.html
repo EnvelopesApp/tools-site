@@ -29,7 +29,8 @@
       <nav class="nav-links" id="site-menu" aria-label="Primary navigation">
         <a href="cleancut.html">CleanCut</a>
         <a href="polishkey.html">PolishKey</a>
-        <a href="envelopes.html">Envelopes</a>
+        <a href="snaptask.html">SnapTask</a>
+        <a href="snaptask.html">SnapTask</a><a href="envelopes.html">Envelopes</a>
         <a href="apps.html">Apps</a>
         <a href="about.html">About</a>
         <a href="support.html">Support</a>
@@ -43,7 +44,7 @@
       <div class="shell">
         <p class="eyebrow">Privacy</p>
         <h1>Your work stays under your control.</h1>
-        <p>Built Useful apps are designed around local processing and clear choices. This page explains what stays on the device and the limited situations where an app connects to an outside service.</p>
+        <p>Built Useful apps are designed around local processing and clear choices. This page explains what stays on the device and the limited situations where an app connects to an outside service, including the Google account SnapTask writes to on your behalf.</p>
       </div>
     </section>
 
@@ -53,6 +54,7 @@
           <strong>On this page</strong>
           <a href="#videos">Video processing</a>
           <a href="#polishkey">Text rewrites</a>
+          <a href="#snaptask">Tasks and calendar</a>
           <a href="#envelopes">Budget data</a>
           <a href="#network">Network connections</a>
           <a href="#license">License data</a>
@@ -74,6 +76,16 @@
             <p>If you choose the optional Gemini provider and enter your own API key, selected text is sent to Google's Gemini API for that rewrite. PolishKey does not send selected text, rewritten text, clipboard contents, app names, or surrounding document content to Envelopes for AI processing.</p>
           </section>
 
+          <section class="prose-section" id="snaptask">
+            <p class="eyebrow">SnapTask tasks and calendar</p>
+            <h2>SnapTask writes to your Google account and nowhere else.</h2>
+            <p>When you connect a Google account, SnapTask asks for three permissions and no more: create and manage your tasks, view and edit events on your calendars, and see the list of calendars you are subscribed to. The calendar list is read only so the app can offer you the calendars you actually have; it is not used to read other people's events.</p>
+            <p>What SnapTask sends to Google is what you typed: the task title, an optional note, an optional date, and an optional time. It creates the task or event in the list or calendar you chose. It does not read your existing tasks or events, and it does not send any of it to Envelopes. There is no Envelopes account, no server, and no analytics in SnapTask.</p>
+            <p>Sign-in happens in your own browser using Google's standard OAuth flow. SnapTask never sees or stores your Google password. The token Google returns is kept in the macOS Keychain, or Windows Credential Manager, and never in a settings file. Disconnecting the account in SnapTask revokes that token with Google and deletes the local copy. You can also remove SnapTask's access at any time from your Google account's permissions page.</p>
+            <p>SnapTask reads your clipboard once, when the capture box opens, so it can offer text you just copied as a starting point. That text stays on your computer unless you choose to save the capture. SnapTask never writes to your clipboard and never clears it. Until an account is connected, captures are written to a local file in SnapTask's own application-data folder rather than sent anywhere.</p>
+            <p>SnapTask requests no macOS permissions at all: no Accessibility, no Automation, no screen recording, and no simulated keystrokes.</p>
+          </section>
+
           <section class="prose-section" id="envelopes">
             <p class="eyebrow">Envelopes budget data</p>
             <h2>Envelopes does not connect to your bank.</h2>
@@ -93,6 +105,8 @@
             <h3>Optional anonymous CleanCut for Mac usage analytics</h3>
             <p>CleanCut for Mac sends limited product-usage events to the private Built Useful analytics dashboard unless you turn off <strong>Share anonymous usage data</strong> in Settings. Events include first launch, app version, operating system and processor architecture, successful video counts, the selected tool combination, free-trial limit events, checkout openings, and whether a license was activated. The current Windows early-access build does not send these usage events.</p>
             <p>These events use a random installation ID. They do not include your name, email address, raw IP address, video or audio, filenames or paths, transcripts, subtitle text, detected words, license key, or payment details.</p>
+            <h3>SnapTask Google connection</h3>
+            <p>SnapTask contacts Google to sign in, to refresh its access, and to create the task or event you asked for. Those are the only requests it makes. It does not contact Envelopes, check for updates, or send usage data.</p>
             <h3>Optional cloud rewrite provider</h3>
             <p>PolishKey can use Gemini only when you select Gemini in Settings and provide your own Gemini API key. Local rewrite mode remains available without that key.</p>
             <h3>Envelopes sync and subscription status</h3>
