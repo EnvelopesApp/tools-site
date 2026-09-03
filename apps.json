@@ -161,7 +161,7 @@
     {
       "name": "SnapTask",
       "slug": "snaptask",
-      "status": "in development",
+      "status": "public beta",
       "currentVersion": "0.1.0",
       "shortDescription": "Turn a thought into a Google Task or Calendar event with one keyboard shortcut, without leaving what you are doing.",
       "longDescription": "SnapTask puts a small glass box on screen when you press Ctrl+Space. Type what needs doing, pick a date, choose the list or calendar it belongs in, and press Enter. It creates the task or event directly in your Google account and gets out of the way. SnapTask asks for no macOS permissions at all: no Accessibility, no Automation, and no synthetic keystrokes. It reads the clipboard only to offer a starting point, and never writes to it.",
@@ -171,8 +171,8 @@
       "platforms": [
         {
           "name": "Apple Silicon Mac",
-          "status": "in development",
-          "downloadUrl": null
+          "status": "available",
+          "downloadUrl": "https://github.com/EnvelopesApp/snaptask-updates/releases/latest/download/SnapTask.dmg"
         },
         {
           "name": "Intel Mac",
@@ -186,7 +186,7 @@
         }
       ],
       "checkoutUrl": null,
-      "releaseRepo": null,
+      "releaseRepo": "https://github.com/EnvelopesApp/snaptask-updates",
       "websitePage": "snaptask.html",
       "supportPage": "support.html",
       "privacyPage": "privacy.html",
@@ -196,9 +196,9 @@
       "notes": [
         "SnapTask uses bundle ID com.envelopes.snaptask and credential-store service name snaptask.",
         "Free by decision. There is no Polar product, no checkout, and no licence benefit; do not reuse CleanCut's or PolishKey's.",
-        "No public download yet. The only build so far is ad-hoc signed and local, and the launch playbook forbids pointing the website at an unsigned local build.",
-        "The Google OAuth consent screen is still in testing mode, so only listed test accounts can connect. Publishing it to production requires this website page and a SnapTask privacy section, which is what this entry adds.",
-        "Turning the download on needs: a notarized DMG signed with the Developer ID certificate, a snaptask-updates release repository, and the consent screen moved to production."
+        "Apple Silicon Mac release v0.1.0 is signed with the Envelopes Developer ID certificate, notarized, stapled, and published from the SnapTask-specific updates repo.",
+        "The Google OAuth consent screen must be published to production before people other than listed test accounts can connect an account.",
+        "Windows source is written but has never been compiled or tested."
       ]
     }
   ]
