@@ -188,6 +188,10 @@
       "checkoutUrl": null,
       "releaseRepo": "https://github.com/EnvelopesApp/snaptask-updates",
       "websitePage": "snaptask.html",
+      "demo": {
+        "pageAnchor": "snaptask.html#snaptask-demo-title",
+        "summary": "See the SnapTask capture box over a document, with a task typed in and its destination named before you press Enter."
+      },
       "supportPage": "support.html",
       "privacyPage": "privacy.html",
       "sourceRepositories": [
