@@ -181,15 +181,19 @@
               </details>
               <details>
                 <summary>Do I need to install Ollama?</summary>
-                <div>No. PolishKey includes its private local runtime. When you choose local rewriting, the app guides a one-time Gemma model download with visible progress and stores it in PolishKey's application data.</div>
+                <div>No. PolishKey includes its private local runtime. When you choose local rewriting, the app guides a one-time Qwen3 4B model download with visible progress and stores it in PolishKey's application data.</div>
               </details>
               <details>
                 <summary>What do Thinking Off, On, and Smart change?</summary>
-                <div>Off favors speed, On uses deeper reasoning, and Smart turns reasoning on for longer or more complex writing. The same setting controls both the private local model and Gemini.</div>
+                <div>These controls apply only when Gemini is selected: Off favors speed, On uses deeper reasoning, and Smart chooses based on the writing. Private local Qwen rewrites always use the fast direct path.</div>
               </details>
               <details>
                 <summary>Do I need a Gemini API key?</summary>
                 <div>No. PolishKey works locally by default. Gemini is optional and only used if you choose it in Settings and enter your own API key.</div>
+              </details>
+              <details>
+                <summary>How can I troubleshoot a slow or missed hotkey rewrite?</summary>
+                <div>Open PolishKey Settings, find Hotkey diagnostics, and choose Open hotkey logs. Each press has a private run ID with capture, model timing, retry, focus, and paste results. The log does not include your selected text, rewritten text, clipboard contents, API keys, or license keys.</div>
               </details>
               <details>
                 <summary>How does the license work?</summary>
@@ -237,7 +241,7 @@
               <div><strong>CleanCut</strong><span>Apple Silicon or Intel Mac on macOS 14+, or 64-bit Windows 10 version 1809+ / Windows 11.</span></div>
               <div><strong>PolishKey</strong><span>Apple Silicon Mac available now. Intel Mac and Windows are planned.</span></div>
               <div><strong>Envelopes</strong><span>iPhone and iPad through the App Store.</span></div>
-              <div><strong>Current versions</strong><span>CleanCut 1.0.43 on Mac / 1.0.44 on Windows, PolishKey 0.2.41, Envelopes 1.0.</span></div>
+              <div><strong>Current versions</strong><span>CleanCut 1.0.43 on Mac / 1.0.44 on Windows, PolishKey 0.2.42, Envelopes 1.0.</span></div>
             </div>
           </section>
         </div>
