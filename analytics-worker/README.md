@@ -31,7 +31,7 @@ emails.
 ## Deploy
 
 ```bash
-cd /Users/ryansp/Developer/tools-site/analytics-worker
+cd ~/Developer/tools-site/analytics-worker
 wrangler d1 create toolshelf_analytics
 ```
 

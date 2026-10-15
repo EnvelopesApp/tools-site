@@ -9,20 +9,20 @@ checkout, download, update flow, or public release.
 For every app launch thread, make sure the agent can read:
 
 - the app project folder
-- `/Users/ryansp/Developer/tools-site`
+- `~/Developer/tools-site`
 - the canonical playbook:
-  `/Users/ryansp/Developer/tools-site/docs/APP_LAUNCH_PLAYBOOK.md`
+  `~/Developer/tools-site/docs/APP_LAUNCH_PLAYBOOK.md`
 - any existing shipped app used as a reference, such as CleanCut
 
-If an app lives outside `/Users/ryansp/Developer`, either add that folder as a
-workspace root for the chat or move/copy the app into `/Users/ryansp/Developer`
+If an app lives outside `~/Developer`, either add that folder as a
+workspace root for the chat or move/copy the app into `~/Developer`
 before asking the agent to wire website, release, and license work together.
 
 At the start of a new app thread, tell the agent:
 
 ```text
-Read /Users/ryansp/Developer/AGENTS.md and
-/Users/ryansp/Developer/tools-site/docs/APP_LAUNCH_PLAYBOOK.md first. This app should ship
+Read ~/Developer/AGENTS.md and
+~/Developer/tools-site/docs/APP_LAUNCH_PLAYBOOK.md first. This app should ship
 through the same Toolshelf website, Polar licensing, and GitHub release pattern
 as CleanCut, but with its own product IDs and release assets.
 ```
@@ -106,7 +106,7 @@ legacy in-place update payload.
 The website lives in:
 
 ```text
-/Users/ryansp/Developer/tools-site
+~/Developer/tools-site
 ```
 
 Current public site:
@@ -197,8 +197,8 @@ CleanCut is the first live paid app and the best reference for:
 
 Before touching CleanCut itself, read:
 
-- `/Users/ryansp/Developer/cleancut/AGENTS.md`
-- `/Users/ryansp/Developer/cleancut/RELEASE.md`
-- `/Users/ryansp/Developer/cleancut/NEXT_STEPS.md`
-- `/Users/ryansp/Developer/cleancut/engine/README.md`
-- `/Users/ryansp/Developer/cleancut/engine/AUDIO_POLICY.md`
+- `~/Developer/cleancut/AGENTS.md`
+- `~/Developer/cleancut/RELEASE.md`
+- `~/Developer/cleancut/NEXT_STEPS.md`
+- `~/Developer/cleancut/engine/README.md`
+- `~/Developer/cleancut/engine/AUDIO_POLICY.md`

@@ -13,19 +13,19 @@ Replace bracketed text before launch.
 
 Before any launch, license, website, release, or public-download work, read:
 
-1. `/Users/ryansp/Developer/AGENTS.md`
-2. `/Users/ryansp/Developer/tools-site/docs/APP_LAUNCH_PLAYBOOK.md`
+1. `~/Developer/AGENTS.md`
+2. `~/Developer/tools-site/docs/APP_LAUNCH_PLAYBOOK.md`
 3. this app's `README.md`
 4. this app's `RELEASE.md`
 5. this app's `NEXT_STEPS.md`
-6. `/Users/ryansp/Developer/tools-site/README.md` if the website is involved
+6. `~/Developer/tools-site/README.md` if the website is involved
 
 Project facts:
 
 - App name: `[APP_NAME]`
 - App slug: `[app-slug]`
 - Bundle/package ID: `[bundle-or-package-id]`
-- Website repo: `/Users/ryansp/Developer/tools-site`
+- Website repo: `~/Developer/tools-site`
 - Release repo: `[GitHub release repo or "not created yet"]`
 - Polar product: `[Polar product name or "not created yet"]`
 - License rule: `[for example, one activated computer]`
